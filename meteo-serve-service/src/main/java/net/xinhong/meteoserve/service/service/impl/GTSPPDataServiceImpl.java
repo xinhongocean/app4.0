@@ -34,7 +34,7 @@ public class GTSPPDataServiceImpl implements GTSPPDataService {
         DateTimeFormatter dateformat = DateTimeFormat.forPattern("yyyyMMdd");
         DateTime useDate = DateTime.parse(year + month + day , dateformat); //传入为北京时
         DateTime resDate = new DateTime(Integer.valueOf(year),Integer.valueOf(month),Integer.valueOf(day), 8, 0);
-        resDate=resDate.minusDays(3);
+//        resDate=resDate.minusDays(3);
         String ryear = resDate.toString("yyyy");
         String rmonth = resDate.toString("MM");
         String rday = resDate.toString("dd");

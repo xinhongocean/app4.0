@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="net.xinhong.meteoserve.service.typhvolca">
+    <resultMap id="TyphNameBeanMap" type="net.xinhong.meteoserve.service.domain.TyphNameBean">
+        <id column="id" property="ID" jdbcType="INTEGER"/>
+        <result column="cname" property="cname" jdbcType="VARCHAR"/>
+        <result column="ename" property="ename" jdbcType="VARCHAR"/>
+        <result column="source" property="source" jdbcType="VARCHAR"/>
+        <result column="remark" property="remark" jdbcType="VARCHAR"/>
+        <result column="status" property="status" jdbcType="VARCHAR"/>
+        <result column="removetag" property="removetag" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="TyphName_List">
+		cname, ename, source, remark, status, removetag
+	</sql>
+
+    <!--根据英文名查找-->
+    <select id="selectbyename"
+            parameterType="HashMap"
+            resultMap="TyphNameBeanMap">
+        SELECT
+        <include refid="TyphName_List"/>
+        FROM ZD_TYPHOON
+        <where>
+            ename = #{ename}
+        </where>
+    </select>
+</mapper>

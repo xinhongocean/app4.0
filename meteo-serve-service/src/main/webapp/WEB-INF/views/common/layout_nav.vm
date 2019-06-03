@@ -1,0 +1,245 @@
+<link rel="stylesheet" type="text/css" href="#springUrl('')/static/css/home/leftnav.css"/>
+
+<!-- 分割区域 -->
+<div id="separate" class="separate-container" title="收起侧边栏">
+    <div id="narrow" class="separate-narrow"></div>
+</div>
+
+<div class="nav-left">
+    <div id="nav-menu" style="padding: 5px;height: 100%;">
+        <ul id="accordion" class="accordion" style="margin-bottom: 0px;">
+##            <li>
+##                <div class="link"><i class="head glyphicon glyphicon-globe"></i>四级地址管理<i class="head-arrow glyphicon glyphicon-chevron-down"></i></div>
+##                <ul class="submenu">
+##                    <li><a class="menuactive" href="/home.do">四级地址管理</a></li>
+##                    <li><a href="/index.do">四级地址审批</a></li>
+##                </ul>
+##            </li>
+##            <li>
+##                <div class="link"><i class="head glyphicon glyphicon-home"></i>权限管理<i class="head-arrow glyphicon glyphicon-chevron-down"></i></div>
+##                <ul class="submenu">
+##                    <li><a href="/manage/regionedit.do">审批人员</a></li>
+##                    <li><a href="/manage/regionedit.do">四级地址审批</a></li>
+##                    <li><a href="/manage/regionedit.do">生效控制</a></li>
+##                </ul>
+##            </li>
+            <li>
+                <div class="link"><i class="head glyphicon glyphicon-camera"></i>系统管理<i class="head-arrow glyphicon glyphicon-chevron-down"></i></div>
+                <ul class="submenu">
+                    <li><a href="/manage/regionimport.do">日志管理</a></li>
+                    <li><a href="/manage/regionimport.do">备份管理</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    $(function(){
+        initLayout();
+
+        $(window).resize(initLayout);
+
+        bindElementsEvent();
+
+        accordion();
+
+        initLeftNavStatus();
+    })
+
+    function initLeftNavStatus()
+    {
+        try{
+            var href = "$href";
+
+            var acc = $('#accordion');
+
+            var links = acc.find('.link');
+            if(!links)
+                return;
+            $.each(links,function(){
+                $(this).parent().removeClass("open");
+            });
+
+            var submenus = acc.find(".submenu");
+            if(!submenus)return;
+
+            $.each(submenus,function(){
+                if($(this).css('display') == 'block')
+                    $(this).css({'display':'none'});
+            });
+
+            var menus = acc.find('.submenu li a');
+            if(!menus)
+                return;
+            $.each(menus,function(){
+                var menuhref = $(this).attr('href');
+                if(menuhref == href)
+                {
+                    $(this).parent().parent().parent("li").addClass("open");
+                    $(this).parent().parent('.submenu').css('display','block');
+                    $(this).parent().parent('.submenu').prev().children(".head-arrow").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+
+                    if(!$(this).hasClass("menuactive"))
+                    {
+                        $(this).addClass("menuactive");
+                    }
+                }
+                else
+                {
+                    $(this).removeClass("menuactive");
+                }
+            });
+        }
+        catch(e)
+        {
+            debugger;
+        }
+
+    }
+
+    function initLayout()
+    {
+        var height = $('.nav-left').height();
+        var separateTop = height/2;
+
+        $('#separate').css({top:separateTop});
+
+        var leftNav = $('.nav-left');
+        var centerContent = $('.nav-content-div');
+        if(leftNav.css("display") == "none")
+        {
+            centerContent.css({left:"0px"});
+            $("#narrow").css({backgroundPosition: "-41px -8px"});
+        }
+        else
+        {
+            centerContent.css({left:"330px"});
+            $("#narrow").css({backgroundPosition: "-18px -8px"});
+        }
+    }
+
+    /**
+     * 绑定要素事件
+     */
+    function bindElementsEvent() {
+        //debugger;
+        var leftNav = $('.nav-left');
+        var centerContent = $('.nav-content-div');
+
+        //绑定分割区域事件
+        $("#separate").hover(function() {
+            var title = $(this).attr("title");
+            if (title != "收起侧边栏") {
+                $("#narrow").css({backgroundPosition: "-41px -8px"});
+            } else {
+                $("#narrow").css({backgroundPosition: "-18px -8px"});
+            }
+        }, function() {
+            var title = $(this).attr("title");
+            if (title != "收起侧边栏") {
+                $("#narrow").css({backgroundPosition: "-32px -8px"});
+            } else {
+                $("#narrow").css({backgroundPosition: "-8px -8px"});
+            }
+        }).click(function() {
+            //当前页面宽度
+            var title = $(this).attr("title");
+            if (title == "收起侧边栏") {
+                $(this).attr("title","显示侧边栏");
+
+                leftNav.animate({left: "-330px"}, "normal", function() {
+                    leftNav.css({display: "none"})
+                });
+                centerContent.animate({left: "-330px"}, "normal",function(){
+                    centerContent.css({left:"0px"});
+                });
+
+                $("#narrow").css({backgroundPosition: "-32px -8px"});
+
+                $('#separate').animate({left: "-325px"}, "normal", function() {
+                    $('#separate').css({left:"5px"});
+                });
+
+                $('.content').css({padding : "5px"});
+            } else {
+                $(this).attr("title","收起侧边栏");
+
+                leftNav.animate({left: "0px"}, "normal", function() {
+                    leftNav.css({display: "block"})
+                });
+                centerContent.animate({left: "330px"}, "normal",function(){
+                    centerContent.css({left:"330px"});
+                });
+                $("#narrow").css({backgroundPosition: "-32px -8px"});
+
+                $('#separate').animate({left: "330px"}, "normal", function() {
+                });
+
+                $("#narrow").css({backgroundPosition: "-8px -8px"});
+
+                $('.content').css({padding : "5px 5px 5px 0px"});
+            }
+        })
+    }
+
+    function accordion()
+    {
+        var Accordion = function(el, multiple) {
+            this.el = el || {};
+            this.multiple = multiple || false;
+
+            // Variables privadas
+            var links = this.el.find('.link');
+            // Evento
+            links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+
+            var menus = this.el.find('.submenu li a');
+            //debugger;
+            menus.on('click',{e1: this.el},this.onmenuclick)
+        }
+
+        Accordion.prototype.dropdown = function(e) {
+            debugger;
+            var $el = e.data.el;
+            $this = $(this),
+                $next = $this.next();
+
+                $next.slideToggle();
+                $this.parent().toggleClass('open');
+
+            var links = e.data.el.find(".glyphicon-chevron-up");
+
+            if(!links)return false;
+
+            $.each(links, function () {
+                $(this).removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+            })
+
+            if (!e.data.multiple) {
+                    $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+            };
+
+            if($(this).parent().hasClass("open"))
+                $(this).children(".head-arrow").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+            else
+                $(this).children(".head-arrow").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+        }
+
+        Accordion.prototype.onmenuclick = function(e)
+        {
+            //debugger;
+            var menus = e.data.e1.find('.submenu li a');
+
+            $.each(menus,function(){
+                if($(this).removeClass("menuactive"));
+            });
+
+            $(this).addClass("menuactive");
+        }
+
+        var accordion = new Accordion($('#accordion'), false);
+    }
+
+</script>

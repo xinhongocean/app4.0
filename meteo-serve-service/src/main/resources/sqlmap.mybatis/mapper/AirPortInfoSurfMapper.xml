@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="net.xinhong.meteoserve.service.airportinfosurf">
+    <resultMap id="AirPortInfoBeanMap" type="net.xinhong.meteoserve.service.domain.AirPortInfoBean">
+        <result column="lat" property="lat" jdbcType="FLOAT"/>
+        <result column="lng" property="lng" jdbcType="FLOAT"/>
+        <result column="cname" property="cname" jdbcType="VARCHAR"/>
+        <result column="ccname" property="ccname" jdbcType="VARCHAR"/>
+        <result column="ccode" property="ccode" jdbcType="VARCHAR"/>
+        <result column="icao3" property="icao3" jdbcType="VARCHAR"/>
+        <result column="icao4" property="icao4" jdbcType="VARCHAR"/>
+        <result column="scene" property="scene" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <resultMap id="WaypointInfoBeanMap" type="net.xinhong.meteoserve.service.domain.WaypointInfoBean">
+        <result column="id" property="ID" jdbcType="INTEGER"/>
+        <result column="lat" property="lat" jdbcType="FLOAT"/>
+        <result column="lng" property="lng" jdbcType="FLOAT"/>
+        <result column="way_pnt" property="name" jdbcType="VARCHAR"/>
+        <result column="way_seque" property="wayseque" jdbcType="VARCHAR"/>
+        <result column="route_ident" property="routeident" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+		lat,lng,cname, ccname, ccode, icao3, icao4, scene
+	</sql>
+
+    <sql id="Base_Column_List_Waypoint">
+        id, lat,lng, way_pnt, way_seque, route_ident
+    </sql>
+
+    <!--按名称模糊查询航路点信息-->
+    <select id="selectWaypointListbyName"
+            parameterType="HashMap"
+            resultMap="WaypointInfoBeanMap">
+        SELECT
+        <include refid="Base_Column_List_Waypoint"/>
+        FROM ZDMH_WAYPOINT
+        <where>
+            way_pnt LIKE CONCAT(#{name}, '%')
+        </where>
+        <if test="limit != null">
+            limit #{limit} offset 0
+        </if>
+        <if test="limit == null">
+            limit 10 offset 0
+        </if>
+    </select>
+
+    <!--按名称模糊查询航路点信息-->
+    <select id="selectWaypointListbyRouteIdent"
+            parameterType="HashMap"
+            resultMap="WaypointInfoBeanMap">
+        SELECT
+        <include refid="Base_Column_List_Waypoint"/>
+        FROM ZDMH_WAYPOINT
+        <where>
+            route_ident = #{routeidenty}
+        </where>
+        <if test="limit != null">
+            limit #{limit} offset 0
+        </if>
+        <if test="limit == null">
+            limit 10 offset 0
+        </if>
+    </select>
+
+
+
+
+
+
+    <!--按 四字码或三字码精确查询-->
+    <select id="selectbyIco4"
+            parameterType="HashMap"
+            resultMap="AirPortInfoBeanMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM ZDMH_AIRPORT
+        <where>
+            icao4 = #{icao4}
+        </where>
+    </select>
+    <select id="selectbyIco3"
+            parameterType="HashMap"
+            resultMap="AirPortInfoBeanMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM ZDMH_AIRPORT
+        <where>
+            icao3 = #{icao3}
+        </where>
+    </select>
+
+
+    <!--按中文名称 三字码或四字吗模糊查询，只返回limit条记录-->
+
+    <!--oracle-->
+    <!--<select id="selectbyNameIcao3Icao4"-->
+            <!--parameterType="HashMap"-->
+            <!--resultMap="AirPortInfoBeanMap">-->
+        <!--SELECT t.*-->
+        <!--FROM-->
+        <!--(SELECT-->
+        <!--<include refid="Base_Column_List"/>, rownum-->
+        <!--FROM ZDMH_AIRPORT-->
+        <!--<where>-->
+                <!--cname LIKE CONCAT(CONCAT('%', #{param}), '%')-->
+            <!--OR icao3 LIKE CONCAT(#{param}, '%')-->
+            <!--OR icao4 LIKE CONCAT(#{param}, '%')-->
+        <!--</where>-->
+        <!--ORDER BY ccode ASC) t-->
+
+        <!--<where>-->
+            <!--rownum &lt; #{limit}-->
+        <!--</where>-->
+
+        <!--&lt;!&ndash;<if test="limit != null">&ndash;&gt;-->
+        <!--&lt;!&ndash;limit #{limit} offset 0&ndash;&gt;-->
+        <!--&lt;!&ndash;</if>&ndash;&gt;-->
+        <!--&lt;!&ndash;<if test="limit == null">&ndash;&gt;-->
+        <!--&lt;!&ndash;limit 10 offset 0&ndash;&gt;-->
+        <!--&lt;!&ndash;</if>&ndash;&gt;-->
+    <!--</select>-->
+
+    <select id="selectbyNameIcao3Icao4"
+            parameterType="HashMap"
+            resultMap="AirPortInfoBeanMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM ZDMH_AIRPORT
+        <where>
+            cname LIKE CONCAT(CONCAT('%', #{param}), '%')
+            OR icao3 LIKE CONCAT(#{param}, '%')
+            OR icao4 LIKE CONCAT(#{param}, '%')
+
+        </where>
+        ORDER BY ccode ASC
+        <if test="limit != null">
+            limit #{limit} offset 0
+        </if>
+        <if test="limit == null">
+            limit 10 offset 0
+        </if>
+
+
+    </select>
+
+
+    <!--查询距离给定经纬度最近的站点,查询结果按由近到远排列，最多10条记录-->
+    <select id="selectNearestbyLatLng"
+            parameterType="HashMap"
+            resultMap="AirPortInfoBeanMap">
+        SELECT<include refid="Base_Column_List"/>, abs(lat - #{slat}) + abs(lng - #{slng}) resdeltaxy
+        FROM ZDMH_AIRPORT
+        <where>
+            <if test="slat != null">
+                lat &gt; (#{slat} - #{deltay}) AND lat &lt; (#{slat} + #{deltay})
+            </if>
+            <if test="slng != null">
+                AND lng &gt; (#{slng} - #{deltax}) AND lng &lt; (#{slng} + #{deltax})
+            </if>
+        </where>
+        ORDER BY resdeltaxy ASC
+        limit 10 offset 0
+    </select>
+</mapper>

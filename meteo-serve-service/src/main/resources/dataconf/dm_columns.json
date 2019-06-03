@@ -1,0 +1,25 @@
+{
+  "field":{"STATION_CODE":"STATION","YEAR":"YEAR","MONTH":"MONTH","DAY":"DAY","HOUR":"HOUR","MINUTE":"MINUTE"},
+  "data":{
+    "WD":{"ENG":"WD","CHN":"风向"},
+    "WS":{"ENG":"WS","CHN":"风速"},
+    "TT":{"ENG":"AT","CHN":"气温"},
+    "TD":{"ENG":"TD","CHN":"露点温度"},
+    "CN":{"ENG":"N","CHN":"云量"},
+    "PR":{"ENG":"SLP","CHN":"海平面气压"},
+    "DP03":{"ENG":"DP03","CHN":"3小时变压"},
+    "DP24":{"ENG":"DP24","CHN":"24小时变压"},
+    "DT24":{"ENG":"DT24","CHN":"24小时变温"},
+    "RN03":{"ENG":"RAIN03","CHN":"3小时降水"},
+    "RN06":{"ENG":"RAIN06","CHN":"6小时降水"},
+    "RN12":{"ENG":"RAIN12","CHN":"12小时降水"},
+    "RN24":{"ENG":"RAIN24","CHN":"24小时降水"},
+    "RH":{"ENG":"RH","CHN":"相对湿度"},
+    "CNML":{"ENG":"NH","CHN":"中低云量"},
+    "CH":{"ENG":"H","CHN":"云底高"},
+    "VIS":{"ENG":"VIS","CHN":"能见度"},
+    "CFL":{"ENG":"CL","CHN":"低云状"},
+    "CFM":{"ENG":"CM","CHN":"中云状"},
+    "CFH":{"ENG":"CH","CHN":"高云状"}
+  }
+}

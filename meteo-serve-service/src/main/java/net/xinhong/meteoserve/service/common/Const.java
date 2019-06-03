@@ -139,4 +139,8 @@ public class Const {
     public static final String HYCOME_DATA_PREFIX = "hycom:data";
     public static final String HYCOME_IMAGE_PREFIX = "hycom:image";
 
+    public static String HY1Suo_IMAGE_PREFIX= "xhoceanfio:fc:isosurface";
+    public static String HY1Suo_AREA_PREFIX= "xhoceanfio:area";
+    public static final String HY1Suo_ISOLINE_PREFIX = "xhoceanfio:isoline";
+
 }

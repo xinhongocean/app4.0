@@ -1,0 +1,25 @@
+$screen_content
+##<!DOCTYPE html>
+##<html>
+##	<head>
+##		#parse("common/layout_head.vm")
+##
+##	</head>
+##
+##	<body>
+##		<div class="website">
+##			#parse("common/layout_top.vm")
+##			#parse("common/layout_nav.vm")
+##
+##			<div class="nav-content-div">
+##				<div class="content">
+##					<div class="vmContainer">
+##						$screen_content
+##					</div>
+##				</div>
+##			</div>
+##
+##			#parse("common/layout_footer.vm")
+##		</div>
+##	</body>
+##</html>

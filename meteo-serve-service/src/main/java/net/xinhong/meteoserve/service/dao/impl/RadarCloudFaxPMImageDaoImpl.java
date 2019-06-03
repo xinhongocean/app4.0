@@ -58,6 +58,7 @@ public class RadarCloudFaxPMImageDaoImpl implements RadarCloudFaxPMImageDao {
         }else{
             int loop=0;
             while(loop<5) {
+                loop++;
                 date = date.minusDays(1);
                 key = "image:" + type;
                 field = date.toString("yyyyMMdd");

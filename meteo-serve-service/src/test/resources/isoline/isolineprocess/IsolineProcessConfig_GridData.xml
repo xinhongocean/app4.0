@@ -1,0 +1,3177 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GRIDCONFIGXML version="1.0">
+	<AllType>	
+		<!-- 2米露点温度 -->
+		<D2>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-50</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>2</SplineTimes>		
+		</D2>
+		<!-- 沙氏指数 -->
+		<SI>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>-15</MinVal>
+			<MaxVal>20</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>2</SplineTimes>
+		</SI>	
+		<!-- 飞机颠簸 -->
+		<DB>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>5</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</DB>
+		<!-- 飞机积冰 -->
+		<JB>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>5</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</JB>
+		<!-- 急流 -->
+		<JL>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</JL>
+		<!-- 雷暴 -->
+		<LB>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</LB>			
+		<!-- 高度 -->
+		<HH>
+			<Condition Press="1000">
+				<BaseLevel>100</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>-200</MinVal>
+				<MaxVal>780</MaxVal>
+			</Condition>
+			<Condition Press="0925">
+				<BaseLevel>800</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>200</MinVal>
+				<MaxVal>1180</MaxVal>
+			</Condition>
+			<Condition Press="0850">
+				<BaseLevel>1480</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>1000</MinVal>
+				<MaxVal>1980</MaxVal>
+			</Condition>
+			<Condition Press="0800">
+				<BaseLevel>1480</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>1000</MinVal>
+				<MaxVal>1980</MaxVal>
+			</Condition>
+			<Condition Press="0700">
+				<BaseLevel>3000</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>2400</MinVal>
+				<MaxVal>3380</MaxVal>
+			</Condition>
+			<Condition Press="0600">
+				<BaseLevel>4000</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>3600</MinVal>
+				<MaxVal>4520</MaxVal>
+			</Condition>
+			<Condition Press="0500">
+				<BaseLevel>5880</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>4880</MinVal>
+				<MaxVal>6060</MaxVal>
+			</Condition>
+			<Condition Press="0400">
+				<BaseLevel>7340</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>6140</MinVal>
+				<MaxVal>8120</MaxVal>
+			</Condition>
+			<Condition Press="0300">
+				<BaseLevel>9680</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>8000</MinVal>
+				<MaxVal>10360</MaxVal>
+			</Condition>
+			<Condition Press="0250">
+				<BaseLevel>10380</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>9180</MinVal>
+				<MaxVal>12340</MaxVal>
+			</Condition>
+			<Condition Press="0200">
+				<BaseLevel>11900</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>10000</MinVal>
+				<MaxVal>13160</MaxVal>
+			</Condition>
+			<Condition Press="0150">
+				<BaseLevel>14220</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>12220</MinVal>
+				<MaxVal>15380</MaxVal>
+			</Condition>
+			<Condition Press="0100">
+				<BaseLevel>16000</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>14400</MinVal>
+				<MaxVal>17560</MaxVal>
+			</Condition>
+			<Condition Press="0070">
+				<BaseLevel>18620</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>16220</MinVal>
+				<MaxVal>19380</MaxVal>
+			</Condition>
+			<Condition Press="0050">
+				<BaseLevel>20620</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>18620</MinVal>
+				<MaxVal>21780</MaxVal>
+			</Condition>
+			<Condition Press="0030">
+				<BaseLevel>23740</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>21740</MinVal>
+				<MaxVal>25700</MaxVal>
+			</Condition>
+			<Condition Press="0020">
+				<BaseLevel>26500</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>24180</MinVal>
+				<MaxVal>27340</MaxVal>
+			</Condition>
+			<Condition Press="0010">
+				<BaseLevel>31380</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>28420</MinVal>
+				<MaxVal>32380</MaxVal>
+			</Condition>
+			<BaseLevel>5880</BaseLevel>
+			<InterVal>80</InterVal>
+			<MinVal>100</MinVal>
+			<MaxVal>16000</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>3</SplineTimes>
+		</HH>
+		<!-- 海平面气压 -->
+		<SLP>
+			<BaseLevel>1000</BaseLevel>
+			<InterVal>2.5</InterVal>
+			<MinVal>900</MinVal>
+			<MaxVal>1200</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>3</SplineTimes>
+		</SLP>
+		<!-- 海平面气压 -->
+		<PR>
+			<BaseLevel>1000</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>900</MinVal>
+			<MaxVal>1099</MaxVal>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>1</SplineTimes>
+		</PR>
+		<MPR>
+			<BilinearInterVal>2</BilinearInterVal>
+			<BaseLevel>1000</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>900</MinVal>
+			<MaxVal>1099</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>3</SplineTimes>
+		</MPR>
+		
+		
+		<!-- 本站气压 -->
+		<LP>
+			<BaseLevel>1000</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>900</MinVal>
+			<MaxVal>1200</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</LP>
+		<!-- 相对湿度 -->
+		<RH>
+			<BaseLevel>50</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</RH>
+		<!--风速 U分量 -->
+		<UU>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-50</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>0</Spline>
+			<SplineTimes>1</SplineTimes>
+		</UU>
+		<!-- 风速V分量 -->
+		<VV>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-50</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>0</Spline>
+			<SplineTimes>1</SplineTimes>
+		</VV>
+		<!-- 气温 -->
+		<TT>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</TT>
+		<AT>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</AT>
+		<!-- 海平面气温 -->
+		<ST>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-80</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</ST>
+		<VIS>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4000</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>100000</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</VIS>
+		<!-- 大尺度降水量 -->
+		<LS>
+			<BaseLevel>1</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0.1</MinVal>
+			<MaxVal>400</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</LS>
+		<!-- 云水混合比 (10e-6数量级) -->
+		<QC>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>99</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</QC>
+		<!-- 对流降水量 -->
+		<CR>
+			<BaseLevel>1</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0.1</MinVal>
+			<MaxVal>400</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</CR>
+		<!-- 降水量 -->
+		<TR>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</TR>
+		<!-- 3小时间隔降水 -->
+		<TR03>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</TR03>
+		<!-- 6小时间隔降水 -->
+		<TR06>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</TR06>
+		<!-- 12小时间隔降水 -->
+		<TR12>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</TR12>
+		<!-- 24小时间隔降水 -->
+		<TR24>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</TR24>
+		<TROUT24>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</TROUT24>
+		<!-- 地面温度 -->
+		<TS>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</TS>
+		<!-- 露点温度 -->
+		<TD>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</TD>
+		<!-- 温度露点差 -->
+		<TH>
+			<Condition Press="0925">			
+				<InterVal>5</InterVal>				
+			</Condition>
+			<Condition Press="0850">				
+				<InterVal>5</InterVal>				
+			</Condition>
+			<Condition Press="0700">			
+				<InterVal>5</InterVal>
+			</Condition>
+			<Condition Press="0500">				
+				<InterVal>5</InterVal>				
+			</Condition>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-10</MinVal>
+			<MaxVal>70</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</TH>
+		<!-- 地面气压 -->
+		<PS>
+			<BaseLevel>1000</BaseLevel>
+			<InterVal>40</InterVal>
+			<MinVal>480</MinVal>
+			<MaxVal>1160</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</PS>
+		<!-- 2米湿度 -->
+		<Q2>
+			<BaseLevel>50</BaseLevel>
+			<InterVal>9</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>99</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</Q2>
+		<!-- 2米温度 -->
+		<T2>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</T2>
+		<!-- 总云量 -->
+		<TF>
+			<BaseLevel>0.2</BaseLevel>
+			<InterVal>0.2</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>2</SplineTimes>
+		</TF>
+		<!-- 散度 (10e-7数量级) -->
+		<DI>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>-300</MinVal>
+			<MaxVal>0</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>2</SplineTimes>
+		</DI>
+		<!-- 垂直速度(10e-2数量级) -->
+		<WW>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>0</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>2</SplineTimes>
+		</WW>
+		<!-- 涡度 (10e-7数量级) -->
+		<VO>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>300</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>2</SplineTimes>
+		</VO>
+		<!-- 3小时变压 -->
+		<!--<DP03>
+			<BaseLevel>5</BaseLevel>
+			<InterVal>2.5</InterVal>
+			<MinVal>2.5</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>0</Spline>
+			<SplineTimes>1</SplineTimes>
+		</DP03> -->
+		<!-- 24小时变压 -->
+		<!-- <DP24>
+			<BaseLevel>5</BaseLevel>
+			<InterVal>2.5</InterVal>
+			<MinVal>5</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>0</Spline>
+			<SplineTimes>1</SplineTimes>
+		</DP24> -->
+		
+		<!-- 3小时变压 -->
+		<DP03>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.5</InterVal>
+			<MinVal>-30</MinVal>
+			<MaxVal>30</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</DP03>
+		<!-- 24小时变压 -->
+		<DP24>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-30</MinVal>
+			<MaxVal>30</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</DP24>
+		<DT03>
+			<BaseLevel>4</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-50</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</DT03>
+		<!-- 24小时变温 -->
+		<DT24>
+			<BaseLevel>4</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-50</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>1</SplineTimes>
+		</DT24>
+		<!-- 3小时变高 -->
+		<DH03>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-20</MinVal>
+			<MaxVal>20</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</DH03>
+		<!-- 24小时变高 -->
+		<DH24>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>-200</MinVal>
+			<MaxVal>200</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</DH24>
+		<!-- 对流有效位能 -->
+		<CAPE>
+			<BaseLevel>100</BaseLevel>
+			<InterVal>100</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>6000</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>2</SplineTimes>
+		</CAPE>
+		<!-- 云图亮温 -->
+		<CLOUD_TT>
+			<BaseLevel>100</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>255</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>2</SplineTimes>
+		</CLOUD_TT>
+		<!-- 海浪 -->
+		<HY_HYHS>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10,10,10</Spline>
+			<SplineTimes>3</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>50</MaxVal>
+		</HY_HYHS>	
+		<!-- 积雨云 -->
+		<CB_HORIZONTAL> 
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>2</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1</MaxVal>			
+		</CB_HORIZONTAL>
+		<!-- 积冰均值 -->
+		<ICE_MEAN> 
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>2</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1</MaxVal>			
+		</ICE_MEAN>
+		<!-- 积冰最大值 -->
+		<ICE_MAX> 
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>2</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1</MaxVal>			
+		</ICE_MAX>
+		<!-- 积雨云低高 -->
+		<CB_BASE>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>2</SplineTimes>
+			<BaseLevel>400</BaseLevel>
+			<InterVal>1000</InterVal>
+			<MinVal>200</MinVal>
+			<MaxVal>10200</MaxVal>
+		</CB_BASE>
+		<!-- 积雨云顶高 -->
+		<CB_TOP>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>2</SplineTimes>
+			<BaseLevel>800</BaseLevel>
+			<InterVal>2000</InterVal>
+			<MinVal>600</MinVal>
+			<MaxVal>18000</MaxVal>
+		</CB_TOP>
+		<!-- 湍流均值 -->
+		<TURB_MEAN>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>2</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.02</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>0.2</MaxVal>
+		</TURB_MEAN>
+		<!-- 湍流最大 -->
+		<TURB_MAX>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>2</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.02</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>0.2</MaxVal>
+		</TURB_MAX>
+		<!-- 晴空湍流均值 -->
+		<CAT_MEAN>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>2</SplineTimes>
+			<BaseLevel>5</BaseLevel>
+			<InterVal>3</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>30</MaxVal>
+		</CAT_MEAN>
+		<!-- 晴空湍流最大值 -->
+		<CAT_MAX>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>2</SplineTimes>
+			<BaseLevel>5</BaseLevel>
+			<InterVal>3</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>30</MaxVal>
+		</CAT_MAX>
+		<!-- 风速 -->
+		<WS>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+			<BaseLevel>4</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>1</MinVal>
+			<MaxVal>32</MaxVal>
+		</WS>
+		<!-- 海洋预研警示2014-11-24 -->
+		<!-- 温度强度 -->
+		<T_STRENGDEPTH>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10,10</Spline>
+			<SplineTimes>3</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>150</MaxVal>
+		</T_STRENGDEPTH>
+		<!-- 密度强度 -->
+		<ROU_STRENGDEPTH>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10,10</Spline>
+			<SplineTimes>3</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>110</MaxVal>
+		</ROU_STRENGDEPTH>
+		<!-- 声速强度 -->
+		<SOUND_STRENGDEPTH>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>5</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>-1</MinVal>
+			<MaxVal>150</MaxVal>
+		</SOUND_STRENGDEPTH>
+		<!-- 夏季表层温度场 -->
+		<SMTS>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>7</Spline>
+			<SplineTimes>1</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>50</MaxVal>
+		</SMTS>  
+		<!-- 海表面高度 --> 
+		<ESURF>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>5</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>-50</MinVal>
+			<MaxVal>150</MaxVal>
+		</ESURF> 
+		<!-- 表层流速场 -->
+		<SPEEDS>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+			<BaseLevel>200</BaseLevel>
+			<InterVal>200</InterVal>
+			<MinVal>1</MinVal>
+			<MaxVal>1500</MaxVal>
+		</SPEEDS> 
+		<!-- 锋面(强流)影响深度 -->
+		<DEP>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>7</Spline>
+			<SplineTimes>1</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>50</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1000</MaxVal>
+		</DEP>
+		<!-- 锋面(流轴)位置 -->
+		<!--POS>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>0</Spline>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1</MaxVal>
+		</POS-->
+		<!-- 速度锋面强度 -->
+		<V_FRONT_STRENG>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>7</Spline>
+			<SplineTimes>1</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>300</MaxVal>
+		</V_FRONT_STRENG> 
+		<!-- 声速锋面强度 -->
+		<S_FRONT_STRENG>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>7</Spline>
+			<SplineTimes>1</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>100</MaxVal>
+		</S_FRONT_STRENG>  
+		<!-- 温度锋面强度 -->
+		<T_FRONT_STRENG>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>7</Spline>
+			<SplineTimes>1</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>20</MaxVal>
+		</T_FRONT_STRENG>   
+		<!-- 表层声速场 -->
+		<SOUNDS>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>7</Spline>
+			<SplineTimes>1</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>1000</MinVal>
+			<MaxVal>2000</MaxVal>
+		</SOUNDS> 
+		<!-- 下界深度 -->
+		<DOWNDEPTH>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>5</SplineTimes>
+			<BaseLevel>-100</BaseLevel>
+			<InterVal>100</InterVal>
+			<MinVal>-4000</MinVal>
+			<MaxVal>-10</MaxVal>
+		</DOWNDEPTH> 
+		<!-- 厚度 -->
+		<THICKDEPTH>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>5</SplineTimes>
+			<BaseLevel>100</BaseLevel>
+			<InterVal>200</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>4000</MaxVal>
+		</THICKDEPTH> 
+		<!-- 上界深度 -->
+		<UPDEPTH>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>4</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>-200</MinVal>
+			<MaxVal>0</MaxVal>
+		</UPDEPTH>
+		<!-- 假相当位温 -->
+		<TB>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</TB>
+		<!-- 理查逊数 -->
+		<RI>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-20</MinVal>
+			<MaxVal>20</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</RI>
+		<!-- 垂直风切变风速 -->
+		<VWINDSHEARWS>
+			<BaseLevel>1</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</VWINDSHEARWS>
+	</AllType>
+	<!-- T511 -->
+	<KT>
+		<!-- 假相当位温 -->
+		<TB>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</TB>
+		<!-- 威胁指数 -->
+		<SW>
+			<BaseLevel>300</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1000</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</SW>
+		<!-- 降水量 -->
+		<!-- 散度 (10e-7数量级) -->
+		<DI>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>-300</MinVal>
+			<MaxVal>0</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>2</SplineTimes>
+		</DI>
+		<!-- 涡度 (10e-7数量级) -->
+		<VO>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>300</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>1</SplineTimes>
+		</VO>
+		<!-- 垂直速度(10e-2数量级) -->
+		<WW>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>0</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>1</SplineTimes>
+		</WW>
+		<TR>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>1,10</Spline>
+			<SplineTimes>0</SplineTimes>
+		</TR>
+		<!-- 3小时间隔降水 -->
+		<TR03>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>1,5</Spline>
+			<SplineTimes>1</SplineTimes>
+		</TR03>
+		<!-- 6小时间隔降水 -->
+		<TR06>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>1,5</Spline>
+			<SplineTimes>1</SplineTimes>
+		</TR06>
+		<!-- 12小时间隔降水 -->
+		<TR12>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>1,5</Spline>
+			<SplineTimes>1</SplineTimes>
+		</TR12>
+		<!-- 24小时间隔降水 -->
+		<TR24>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>1,10</Spline>
+			<SplineTimes>1</SplineTimes>
+		</TR24>
+		<TROUT24>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>1,10</Spline>
+			<SplineTimes>1</SplineTimes>
+		</TROUT24>	
+	</KT>
+	<!-- WRF -->
+	<KW>
+		<!-- 总云量 -->
+		<TF>
+			<BaseLevel>1</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>10</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</TF>
+		<!-- A指数 -->
+		<AI>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>-80</MinVal>
+			<MaxVal>60</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</AI>
+		<!-- K指数 -->
+		<KI>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>-50</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</KI>		
+		<!-- 抬升指数 -->
+		<LI>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.5</InterVal>
+			<MinVal>-15</MinVal>
+			<MaxVal>20</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</LI>
+		<!-- 10米风场 -->
+		<UT>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>245</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>1</SplineTimes>
+		</UT>
+		<!-- 水汽通量散度 -->
+		<RA>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>6</InterVal>
+			<MinVal>-50</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</RA>
+		<!-- 水汽通量10e-1 -->
+		<RF>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>-10</MinVal>
+			<MaxVal>310</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</RF>
+		<!-- 假相当位温 -->
+		<TB>
+			<BaseLevel>300</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>100</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</TB>
+		<TE>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</TE>
+		<!-- 温度平流 -->
+		<TC>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</TC>
+		<!-- 涡度平流 -->
+		<VB>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>-200</MinVal>
+			<MaxVal>180</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</VB>
+		<!-- 比湿10e-5 -->
+		<QQ>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1950</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</QQ>
+		<!-- Z螺旋度 -->
+		<HZ>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-20</MinVal>
+			<MaxVal>20</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</HZ>
+		<!-- 威胁指数 -->
+		<SW>
+			<BaseLevel>300</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1000</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</SW>
+		<!-- 理查逊数 -->
+		<RI>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-20</MinVal>
+			<MaxVal>20</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</RI>
+		<!-- 3小时变假相当位温 -->
+		<DTB03>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</DTB03>
+		<!-- 3小时变露点温度 -->
+		<DTD03>
+			<BaseLevel>2</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</DTD03>
+		<!-- 500-800hPa位势稳定度 -->
+		<CONVEI>
+			<BaseLevel>2</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</CONVEI>
+		<!-- 垂直风切变风速 -->
+		<VWINDSHEARWS>
+			<BaseLevel>1</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</VWINDSHEARWS>
+	</KW>
+	<!-- MM5 -->
+	<KM>
+		<!-- 总云量 -->
+		<TF>
+			<BaseLevel>1</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>10</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>1</SplineTimes>
+		</TF>
+		<!-- A指数 -->
+		<AI>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>-80</MinVal>
+			<MaxVal>60</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</AI>
+		<!-- K指数 -->
+		<KI>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>-50</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</KI>	
+		<!-- 抬升指数 -->
+		<LI>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.5</InterVal>
+			<MinVal>-15</MinVal>
+			<MaxVal>5</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</LI>
+		<!-- 水汽通量散度 -->
+		<RA>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>6</InterVal>
+			<MinVal>-50</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</RA>
+		<!-- 10米风场 -->
+		<UT>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>-30</MinVal>
+			<MaxVal>30</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>1</SplineTimes>
+		</UT>
+		<!-- 水汽通量10e-1 -->
+		<RF>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>-10</MinVal>
+			<MaxVal>310</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</RF>
+		<!-- 假相当位温 -->
+		<TB>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</TB>
+		<TE>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</TE>
+		<!-- 温度平流 -->
+		<TC>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</TC>
+		<!-- 涡度平流 -->
+		<VB>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>-200</MinVal>
+			<MaxVal>180</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</VB>
+		<!-- 比湿10e-5 -->
+		<QQ>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1950</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>1</SplineTimes>
+		</QQ>
+		<HZ>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-20</MinVal>
+			<MaxVal>20</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>1</SplineTimes>
+		</HZ>
+		<!-- 威胁指数 -->
+		<SW>
+			<BaseLevel>300</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1000</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</SW>
+		<!-- 理查逊数 -->
+		<RI>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-20</MinVal>
+			<MaxVal>20</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</RI>
+		<!-- 3小时变假相当位温 -->
+		<DTB03>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</DTB03>
+		<!-- 3小时变露点温度 -->
+		<DTD03>
+			<BaseLevel>2</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</DTD03>
+		<!-- 500-800hPa位势稳定度 -->
+		<CONVEI>
+			<BaseLevel>2</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</CONVEI>
+		<!--垂直风切变风速 -->
+		<VWINDSHEARWS>
+			<BaseLevel>1</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</VWINDSHEARWS>
+	</KM>
+	<!-- 解释预报 -->
+	<KJ>
+		<!-- 飞机颠簸 -->
+		<DB>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>5</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</DB>
+		<!-- 飞机积冰 -->
+		<JB>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>5</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</JB>
+		<!-- 急流 -->
+		<JL>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</JL>
+		<!-- 雷暴 -->
+		<LB>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</LB>
+		<!-- 不稳定区 -->
+		<BW>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</BW>
+		<!-- 云区 -->
+		<YQ>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</YQ>
+		<!-- 雾区 -->
+		<WQ>
+			<BaseLevel>0.5</BaseLevel>
+			<InterVal>0.1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</WQ>
+	</KJ>
+	<!-- 欧洲格点 -->
+	<EC>
+		<HH>
+			<Condition Press="1000">
+				<BaseLevel>100</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>-200</MinVal>
+				<MaxVal>780</MaxVal>
+			</Condition>
+			<Condition Press="0925">
+				<BaseLevel>800</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>200</MinVal>
+				<MaxVal>1180</MaxVal>
+			</Condition>
+			<Condition Press="0850">
+				<BaseLevel>1480</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>1000</MinVal>
+				<MaxVal>1980</MaxVal>
+			</Condition>
+			<Condition Press="0800">
+				<BaseLevel>1480</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>1000</MinVal>
+				<MaxVal>1980</MaxVal>
+			</Condition>
+			<Condition Press="0700">
+				<BaseLevel>3000</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>2400</MinVal>
+				<MaxVal>3380</MaxVal>
+			</Condition>
+			<Condition Press="0600">
+				<BaseLevel>4000</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>3600</MinVal>
+				<MaxVal>4520</MaxVal>
+			</Condition>
+			<Condition Press="0500">
+				<BaseLevel>5880</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>4880</MinVal>
+				<MaxVal>6060</MaxVal>
+			</Condition>
+			<Condition Press="0400">
+				<BaseLevel>7340</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>6140</MinVal>
+				<MaxVal>8120</MaxVal>
+			</Condition>
+			<Condition Press="0300">
+				<BaseLevel>9680</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>8000</MinVal>
+				<MaxVal>10360</MaxVal>
+			</Condition>
+			<Condition Press="0250">
+				<BaseLevel>10380</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>9180</MinVal>
+				<MaxVal>12340</MaxVal>
+			</Condition>
+			<Condition Press="0200">
+				<BaseLevel>11900</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>10000</MinVal>
+				<MaxVal>13160</MaxVal>
+			</Condition>
+			<Condition Press="0150">
+				<BaseLevel>14220</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>12220</MinVal>
+				<MaxVal>15380</MaxVal>
+			</Condition>
+			<Condition Press="0100">
+				<BaseLevel>16000</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>14400</MinVal>
+				<MaxVal>17560</MaxVal>
+			</Condition>
+			<Condition Press="0070">
+				<BaseLevel>18620</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>16220</MinVal>
+				<MaxVal>19380</MaxVal>
+			</Condition>
+			<Condition Press="0050">
+				<BaseLevel>20620</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>18620</MinVal>
+				<MaxVal>21780</MaxVal>
+			</Condition>
+			<Condition Press="0030">
+				<BaseLevel>23740</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>21740</MinVal>
+				<MaxVal>25700</MaxVal>
+			</Condition>
+			<Condition Press="0020">
+				<BaseLevel>26500</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>24180</MinVal>
+				<MaxVal>27340</MaxVal>
+			</Condition>
+			<Condition Press="0010">
+				<BaseLevel>31380</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>28420</MinVal>
+				<MaxVal>32380</MaxVal>
+			</Condition>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>3</SplineTimes>
+		</HH>
+		<!-- 海平面气压 -->
+		<PR>
+			<BaseLevel>1000</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>900</MinVal>
+			<MaxVal>1099</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</PR>	
+	</EC>
+	<!-- 欧洲细网格 -->
+	<ECMF>
+		<!-- 高度 -->
+		<HH>
+			<Condition Press="1000">
+				<BaseLevel>100</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>-200</MinVal>
+				<MaxVal>780</MaxVal>
+			</Condition>
+			<Condition Press="0925">
+				<BaseLevel>800</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>200</MinVal>
+				<MaxVal>1180</MaxVal>
+			</Condition>
+			<Condition Press="0850">
+				<BaseLevel>1480</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>1000</MinVal>
+				<MaxVal>1980</MaxVal>
+			</Condition>
+			<Condition Press="0700">
+				<BaseLevel>3000</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>2400</MinVal>
+				<MaxVal>3380</MaxVal>
+			</Condition>
+			<Condition Press="0600">
+				<BaseLevel>4000</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>3600</MinVal>
+				<MaxVal>4520</MaxVal>
+			</Condition>
+			<Condition Press="0500">
+				<BaseLevel>5880</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>4880</MinVal>
+				<MaxVal>6060</MaxVal>
+			</Condition>
+			<Condition Press="0400">
+				<BaseLevel>7340</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>6140</MinVal>
+				<MaxVal>8120</MaxVal>
+			</Condition>
+			<Condition Press="0300">
+				<BaseLevel>9680</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>8000</MinVal>
+				<MaxVal>10360</MaxVal>
+			</Condition>
+			<Condition Press="0250">
+				<BaseLevel>10380</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>9180</MinVal>
+				<MaxVal>12340</MaxVal>
+			</Condition>
+			<Condition Press="0200">
+				<BaseLevel>11900</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>10000</MinVal>
+				<MaxVal>13160</MaxVal>
+			</Condition>
+			<Condition Press="0150">
+				<BaseLevel>14220</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>12220</MinVal>
+				<MaxVal>15380</MaxVal>
+			</Condition>
+			<Condition Press="0100">
+				<BaseLevel>16000</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>14400</MinVal>
+				<MaxVal>17560</MaxVal>
+			</Condition>
+			<Condition Press="0070">
+				<BaseLevel>18620</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>16220</MinVal>
+				<MaxVal>19380</MaxVal>
+			</Condition>
+			<Condition Press="0050">
+				<BaseLevel>20620</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>18620</MinVal>
+				<MaxVal>21780</MaxVal>
+			</Condition>
+			<Condition Press="0030">
+				<BaseLevel>23740</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>21740</MinVal>
+				<MaxVal>25700</MaxVal>
+			</Condition>
+			<Condition Press="0020">
+				<BaseLevel>26500</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>24180</MinVal>
+				<MaxVal>27340</MaxVal>
+			</Condition>
+			<Condition Press="0010">
+				<BaseLevel>31380</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>28420</MinVal>
+				<MaxVal>32380</MaxVal>
+			</Condition>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>3</SplineTimes>
+		</HH>
+		<!-- 散度 (10e-6数量级) -->
+		<DI>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>-300</MinVal>
+			<MaxVal>0</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>3</SplineTimes>
+		</DI>
+		<!-- 垂直速度(10e-2数量级) -->
+		<WW>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>0</MaxVal>
+			<BilinearInterVal>0.25</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</WW>
+		<!-- 涡度 (10e-6数量级) -->
+		<VO>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>300</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>3</SplineTimes>
+		</VO>
+		<!-- 总云量 -->
+		<TF>
+			<BaseLevel>1</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>10</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</TF>
+		<!-- 2米温度 -->
+		<T2>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-50</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>		
+		</T2>
+		<!-- 2米露点温度 -->
+		<D2>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-50</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>		
+		</D2>
+	        <!-- 温度 -->
+		<TT>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-50</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>		
+		</TT>
+                <!-- 低云云量 -->
+		<LCC>
+			<BaseLevel>2</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>10</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</LCC>		
+		<!-- 10米东西风 -->
+		<UT>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>-30</MinVal>
+			<MaxVal>30</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>1</SplineTimes>
+		</UT>
+		<!-- 10米南北风 -->
+		<VT>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>-30</MinVal>
+			<MaxVal>30</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>1</SplineTimes>
+		</VT>
+		<!-- 东西风 -->
+		<UU>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>-30</MinVal>
+			<MaxVal>30</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>1</SplineTimes>
+		</UU>
+		<!-- 南北风 -->
+		<VV>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>-30</MinVal>
+			<MaxVal>30</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>1</SplineTimes>
+		</VV>
+		<!-- 对流有效位能 -->
+		<CAPE>
+			<BaseLevel>100</BaseLevel>
+			<InterVal>100</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>2000</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>2</SplineTimes>
+		</CAPE>
+		<!-- 对流性降水 -->
+		<CR>
+			<BaseLevel>1</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0.1</MinVal>
+			<MaxVal>400</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>2</SplineTimes>
+		</CR>
+                <!-- 12降水 -->
+		<TR12>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>3</SplineTimes>
+                </TR12>
+                <!-- 3降水 -->
+		<TR03>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>3</SplineTimes>
+                </TR03>
+                <!-- 6降水 -->
+		<TR06>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>3</SplineTimes>
+                </TR06>
+		<!-- 24降水 -->
+        <TR24>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>3</SplineTimes>
+        </TR24>
+		<!-- 预报反照率 -->
+		<FAL>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</FAL>
+		<!-- 反照率 -->
+		<AL>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</AL>
+		<!-- 平均海平面气压 -->
+		<MPR>
+			<BaseLevel>1000</BaseLevel>
+			<InterVal>2.5</InterVal>
+			<MinVal>900</MinVal>
+			<MaxVal>1200</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</MPR>
+		<!-- 大气柱水汽总量 -->
+		<TCWV>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</TCWV>
+		<!-- 比湿10e5 -->
+		<SH>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>100</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1950</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</SH>
+		<!-- 假相当位温 -->
+		<TB>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>3</SplineTimes>
+		</TB>
+		<!-- 雪密度 -->
+		<SN>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>100</MinVal>
+			<MaxVal>300</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>3</SplineTimes>
+		</SN>
+		<!-- 雪深 -->
+		<SD>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>3</SplineTimes>
+		</SD>
+		<!-- 降雪量 -->
+		<SF>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>200</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>3</SplineTimes>
+		</SF>		
+		<!-- 云覆盖 -->
+		<CC>
+		</CC>
+		<!-- 云冰量 -->
+		<CI>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-20</MinVal>
+			<MaxVal>20</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</CI>	
+		<!-- 云液体水含量 -->
+		<CLWC>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-20</MinVal>
+			<MaxVal>20</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</CLWC>	
+		<!--过去6小时2米最高温度-->
+		<MX2T6>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-60</MinVal>
+			<MaxVal>48</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</MX2T6>
+		<!--过去6小时2米最低温度 -->
+		<MN2T6>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-80</MinVal>
+			<MaxVal>48</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</MN2T6>
+		<!-- 预报反照率 -->
+		<FAL>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>2</SplineTimes>
+		</FAL>
+		<!-- 反照率 -->
+		<AL>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>2</SplineTimes>
+		</AL>
+		
+		<!-- 地面气压对数 -->
+		<INSP>
+		</INSP>
+	</ECMF>	
+	<!-- 英国格点 -->
+	<WRR>
+	</WRR>
+	<!-- 美国格点 -->
+	<WBC>
+		<!-- 高度 -->
+		<HH>
+			<Condition Press="1000">
+				<BaseLevel>100</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>-200</MinVal>
+				<MaxVal>780</MaxVal>
+			</Condition>
+			<Condition Press="0925">
+				<BaseLevel>800</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>200</MinVal>
+				<MaxVal>1180</MaxVal>
+			</Condition>
+			<Condition Press="0850">
+				<BaseLevel>1480</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>1000</MinVal>
+				<MaxVal>1980</MaxVal>
+			</Condition>
+			<Condition Press="0700">
+				<BaseLevel>3000</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>2400</MinVal>
+				<MaxVal>3380</MaxVal>
+			</Condition>
+			<Condition Press="0600">
+				<BaseLevel>4000</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>3600</MinVal>
+				<MaxVal>4520</MaxVal>
+			</Condition>
+			<Condition Press="0500">
+				<BaseLevel>5880</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>4880</MinVal>
+				<MaxVal>6060</MaxVal>
+			</Condition>
+			<Condition Press="0400">
+				<BaseLevel>7340</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>6140</MinVal>
+				<MaxVal>8120</MaxVal>
+			</Condition>
+			<Condition Press="0300">
+				<BaseLevel>9680</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>8000</MinVal>
+				<MaxVal>10360</MaxVal>
+			</Condition>
+			<Condition Press="0250">
+				<BaseLevel>10380</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>9180</MinVal>
+				<MaxVal>12340</MaxVal>
+			</Condition>
+			<Condition Press="0200">
+				<BaseLevel>11900</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>10000</MinVal>
+				<MaxVal>13160</MaxVal>
+			</Condition>
+			<Condition Press="0150">
+				<BaseLevel>14220</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>12220</MinVal>
+				<MaxVal>15380</MaxVal>
+			</Condition>
+			<Condition Press="0100">
+				<BaseLevel>16000</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>14400</MinVal>
+				<MaxVal>17560</MaxVal>
+			</Condition>
+			<Condition Press="0070">
+				<BaseLevel>18620</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>16220</MinVal>
+				<MaxVal>19380</MaxVal>
+			</Condition>
+			<Condition Press="0050">
+				<BaseLevel>20620</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>18620</MinVal>
+				<MaxVal>21780</MaxVal>
+			</Condition>
+			<Condition Press="0030">
+				<BaseLevel>23740</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>21740</MinVal>
+				<MaxVal>25700</MaxVal>
+			</Condition>
+			<Condition Press="0020">
+				<BaseLevel>26500</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>24180</MinVal>
+				<MaxVal>27340</MaxVal>
+			</Condition>
+			<Condition Press="0010">
+				<BaseLevel>31380</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>28420</MinVal>
+				<MaxVal>32380</MaxVal>
+			</Condition>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>0</SplineTimes>
+		</HH>
+	</WBC>
+	<!-- 日本格点 -->
+	<RJ>
+		<HH>
+			<Condition Press="1000">
+				<BaseLevel>100</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>-200</MinVal>
+				<MaxVal>780</MaxVal>
+			</Condition>
+			<Condition Press="0925">
+				<BaseLevel>800</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>200</MinVal>
+				<MaxVal>1180</MaxVal>
+			</Condition>
+			<Condition Press="0850">
+				<BaseLevel>1480</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>1000</MinVal>
+				<MaxVal>1980</MaxVal>
+			</Condition>
+			<Condition Press="0800">
+				<BaseLevel>1480</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>1000</MinVal>
+				<MaxVal>1980</MaxVal>
+			</Condition>
+			<Condition Press="0700">
+				<BaseLevel>3000</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>2400</MinVal>
+				<MaxVal>3380</MaxVal>
+			</Condition>
+			<Condition Press="0600">
+				<BaseLevel>4000</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>3600</MinVal>
+				<MaxVal>4520</MaxVal>
+			</Condition>
+			<Condition Press="0500">
+				<BaseLevel>5880</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>4880</MinVal>
+				<MaxVal>6060</MaxVal>
+			</Condition>
+			<Condition Press="0400">
+				<BaseLevel>7340</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>6140</MinVal>
+				<MaxVal>8120</MaxVal>
+			</Condition>
+			<Condition Press="0300">
+				<BaseLevel>9680</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>8000</MinVal>
+				<MaxVal>10360</MaxVal>
+			</Condition>
+			<Condition Press="0250">
+				<BaseLevel>10380</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>9180</MinVal>
+				<MaxVal>12340</MaxVal>
+			</Condition>
+			<Condition Press="0200">
+				<BaseLevel>11900</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>10000</MinVal>
+				<MaxVal>13160</MaxVal>
+			</Condition>
+			<Condition Press="0150">
+				<BaseLevel>14220</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>12220</MinVal>
+				<MaxVal>15380</MaxVal>
+			</Condition>
+			<Condition Press="0100">
+				<BaseLevel>16000</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>14400</MinVal>
+				<MaxVal>17560</MaxVal>
+			</Condition>
+			<Condition Press="0070">
+				<BaseLevel>18620</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>16220</MinVal>
+				<MaxVal>19380</MaxVal>
+			</Condition>
+			<Condition Press="0050">
+				<BaseLevel>20620</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>18620</MinVal>
+				<MaxVal>21780</MaxVal>
+			</Condition>
+			<Condition Press="0030">
+				<BaseLevel>23740</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>21740</MinVal>
+				<MaxVal>25700</MaxVal>
+			</Condition>
+			<Condition Press="0020">
+				<BaseLevel>26500</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>24180</MinVal>
+				<MaxVal>27340</MaxVal>
+			</Condition>
+			<Condition Press="0010">
+				<BaseLevel>31380</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>28420</MinVal>
+				<MaxVal>32380</MaxVal>
+			</Condition>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</HH>
+		<!-- 海平面气压 -->
+		<PR>
+			<BaseLevel>1000</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>900</MinVal>
+			<MaxVal>1099</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</PR>				
+	</RJ>
+	<!-- 德国格点 -->
+	<ED>
+		<HH>
+			<Condition Press="1000">
+				<BaseLevel>100</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>-200</MinVal>
+				<MaxVal>780</MaxVal>
+			</Condition>
+			<Condition Press="0925">
+				<BaseLevel>800</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>200</MinVal>
+				<MaxVal>1180</MaxVal>
+			</Condition>
+			<Condition Press="0850">
+				<BaseLevel>1480</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>1000</MinVal>
+				<MaxVal>1980</MaxVal>
+			</Condition>
+			<Condition Press="0800">
+				<BaseLevel>1480</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>1000</MinVal>
+				<MaxVal>1980</MaxVal>
+			</Condition>
+			<Condition Press="0700">
+				<BaseLevel>3000</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>2400</MinVal>
+				<MaxVal>3380</MaxVal>
+			</Condition>
+			<Condition Press="0600">
+				<BaseLevel>4000</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>3600</MinVal>
+				<MaxVal>4520</MaxVal>
+			</Condition>
+			<Condition Press="0500">
+				<BaseLevel>5880</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>4880</MinVal>
+				<MaxVal>6060</MaxVal>
+			</Condition>
+			<Condition Press="0400">
+				<BaseLevel>7340</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>6140</MinVal>
+				<MaxVal>8120</MaxVal>
+			</Condition>
+			<Condition Press="0300">
+				<BaseLevel>9680</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>8000</MinVal>
+				<MaxVal>10360</MaxVal>
+			</Condition>
+			<Condition Press="0250">
+				<BaseLevel>10380</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>9180</MinVal>
+				<MaxVal>12340</MaxVal>
+			</Condition>
+			<Condition Press="0200">
+				<BaseLevel>11900</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>10000</MinVal>
+				<MaxVal>13160</MaxVal>
+			</Condition>
+			<Condition Press="0150">
+				<BaseLevel>14220</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>12220</MinVal>
+				<MaxVal>15380</MaxVal>
+			</Condition>
+			<Condition Press="0100">
+				<BaseLevel>16000</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>14400</MinVal>
+				<MaxVal>17560</MaxVal>
+			</Condition>
+			<Condition Press="0070">
+				<BaseLevel>18620</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>16220</MinVal>
+				<MaxVal>19380</MaxVal>
+			</Condition>
+			<Condition Press="0050">
+				<BaseLevel>20620</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>18620</MinVal>
+				<MaxVal>21780</MaxVal>
+			</Condition>
+			<Condition Press="0030">
+				<BaseLevel>23740</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>21740</MinVal>
+				<MaxVal>25700</MaxVal>
+			</Condition>
+			<Condition Press="0020">
+				<BaseLevel>26500</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>24180</MinVal>
+				<MaxVal>27340</MaxVal>
+			</Condition>
+			<Condition Press="0010">
+				<BaseLevel>31380</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>28420</MinVal>
+				<MaxVal>32380</MaxVal>
+			</Condition>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</HH>
+		<!-- 海平面气压 -->
+		<PR>
+			<BaseLevel>1000</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>900</MinVal>
+			<MaxVal>1099</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</PR>	
+		<!-- 垂直速度(10e-2数量级) -->
+		<WW>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>0</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>4</SplineTimes>
+		</WW>
+	</ED>
+	<!-- 国气格点 -->
+	<BJ>
+	</BJ>
+		<HJJSYB>
+		<!-- HJ解释预报 云区 -->
+		<YQQ>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>10</MaxVal>
+			<BilinearInterVal>2</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>1</SplineTimes>
+		</YQQ>
+		<!-- HJ解释预报 积雨云区 -->
+		<JYY>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>3</MaxVal>
+			<BilinearInterVal>2</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</JYY>
+		<!-- HJ解释预报 雷暴落区 -->
+		<LBQ>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1</MaxVal>
+			<BilinearInterVal>2</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</LBQ>
+		<!-- HJ解释预报 积冰区 -->
+		<FJB>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>3</MaxVal>
+			<BilinearInterVal>2</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</FJB>
+		<!-- HJ解释预报 晴空颠簸 -->
+		<QDB>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>3</MaxVal>
+			<BilinearInterVal>2</BilinearInterVal>
+			<Spline>10,5,5</Spline>
+			<SplineTimes>1</SplineTimes>
+		</QDB>
+		<!-- HJ解释预报急流颠簸 -->
+		<LDB>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1</MaxVal>
+			<BilinearInterVal>2</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</LDB>
+		<!-- HJ解释预报高空急流 -->
+		<GJL>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>150</MaxVal>
+			<BilinearInterVal>2</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>0</SplineTimes>
+		</GJL>
+		<!-- HJ解释预报 对流层顶高 -->
+		<DLH>
+			<BaseLevel>11900</BaseLevel>
+			<InterVal>80</InterVal>
+			<MinVal>10000</MinVal>
+			<MaxVal>13160</MaxVal>
+			<BilinearInterVal>2</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>1</SplineTimes>
+		</DLH>
+		<!-- HJ解释预报对流层顶温 -->
+		<DLT>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-80</MinVal>
+			<MaxVal>20</MaxVal>
+			<BilinearInterVal>2</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>1</SplineTimes>
+		</DLT>
+	</HJJSYB>
+	<ZCT799>
+		<!-- 降水量 -->
+		<TR>
+			<BilinearInterVal>0.66</BilinearInterVal>
+			<BaseLevel>10</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>500</MaxVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</TR>	
+	</ZCT799>
+	<HMM5>
+		<HH>
+			<Condition Press="1000">
+				<BaseLevel>100</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>-200</MinVal>
+				<MaxVal>780</MaxVal>
+			</Condition>
+			<Condition Press="0925">
+				<BaseLevel>800</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>200</MinVal>
+				<MaxVal>1180</MaxVal>
+			</Condition>
+			<Condition Press="0850">
+				<BaseLevel>1480</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>1000</MinVal>
+				<MaxVal>1980</MaxVal>
+			</Condition>
+			<Condition Press="0700">
+				<BaseLevel>3000</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>2400</MinVal>
+				<MaxVal>3380</MaxVal>
+			</Condition>
+			<Condition Press="0600">
+				<BaseLevel>4000</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>3600</MinVal>
+				<MaxVal>4520</MaxVal>
+			</Condition>
+			<Condition Press="0500">
+				<BaseLevel>5880</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>4880</MinVal>
+				<MaxVal>6060</MaxVal>
+			</Condition>
+			<Condition Press="0400">
+				<BaseLevel>7340</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>6140</MinVal>
+				<MaxVal>8120</MaxVal>
+			</Condition>
+			<Condition Press="0300">
+				<BaseLevel>9680</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>8000</MinVal>
+				<MaxVal>10360</MaxVal>
+			</Condition>
+			<Condition Press="0250">
+				<BaseLevel>10380</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>9180</MinVal>
+				<MaxVal>12340</MaxVal>
+			</Condition>
+			<Condition Press="0200">
+				<BaseLevel>11900</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>10000</MinVal>
+				<MaxVal>13160</MaxVal>
+			</Condition>
+			<Condition Press="0150">
+				<BaseLevel>14220</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>12220</MinVal>
+				<MaxVal>15380</MaxVal>
+			</Condition>
+			<Condition Press="0100">
+				<BaseLevel>16000</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>14400</MinVal>
+				<MaxVal>17560</MaxVal>
+			</Condition>
+			<Condition Press="0070">
+				<BaseLevel>18620</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>16220</MinVal>
+				<MaxVal>19380</MaxVal>
+			</Condition>
+			<Condition Press="0050">
+				<BaseLevel>20620</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>18620</MinVal>
+				<MaxVal>21780</MaxVal>
+			</Condition>
+			<Condition Press="0030">
+				<BaseLevel>23740</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>21740</MinVal>
+				<MaxVal>25700</MaxVal>
+			</Condition>
+			<Condition Press="0020">
+				<BaseLevel>26500</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>24180</MinVal>
+				<MaxVal>27340</MaxVal>
+			</Condition>
+			<Condition Press="0010">
+				<BaseLevel>31380</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>28420</MinVal>
+				<MaxVal>32380</MaxVal>
+			</Condition>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10,10,10</Spline>
+			<SplineTimes>4</SplineTimes>
+		</HH>
+	</HMM5>
+	<EPHEFC>
+		<!-- EPHZR-浓度场 -->
+		<EP_CONCTFLD>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>5</MinVal>
+			<MaxVal>300</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>4</SplineTimes>
+		</EP_CONCTFLD>
+		<EP_CONCTFLD137>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>300</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>4</SplineTimes>
+		</EP_CONCTFLD137>
+		<EP_CONCTFLDNAT>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>300</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>4</SplineTimes>
+		</EP_CONCTFLDNAT>
+		<EP_CONCTFLDNAT137>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>300</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>4</SplineTimes>
+		</EP_CONCTFLDNAT137>
+		
+		<!-- EPHZR-干沉降场 -->
+		<EP_DRYDEPS>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1000</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>4</SplineTimes>
+		</EP_DRYDEPS>
+		<EP_DRYDEPS137>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1000</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>4</SplineTimes>
+		</EP_DRYDEPS137>
+		<EP_DRYDEPSNAT>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1000</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>4</SplineTimes>
+		</EP_DRYDEPSNAT>
+		<EP_DRYDEPSNAT137>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1000</MaxVal>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>4</SplineTimes>
+		</EP_DRYDEPSNAT137>
+				
+		<!-- EPHZR-湿沉降场 -->
+		<EP_WETDEPS>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>-20</MinVal>
+			<MaxVal>60</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</EP_WETDEPS>
+		<EP_WETDEPS137>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>-20</MinVal>
+			<MaxVal>60</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</EP_WETDEPS137>
+		
+		<EP_WETDEPSNAT>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>-20</MinVal>
+			<MaxVal>60</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</EP_WETDEPSNAT>
+		<EP_WETDEPSNAT137>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>-20</MinVal>
+			<MaxVal>60</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</EP_WETDEPSNAT137>
+		
+		<!-- 散度 (10e-7数量级) -->
+		<DI>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>-300</MinVal>
+			<MaxVal>0</MaxVal>
+			<BilinearInterVal>0.34</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>5</SplineTimes>
+		</DI>
+		<!-- 垂直速度(10e-2数量级) -->
+		<WW>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>0</MaxVal>
+			<BilinearInterVal>0.34</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>5</SplineTimes>
+		</WW>
+		<!-- 涡度 (10e-7数量级) -->
+		<VO>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>300</MaxVal>
+			<BilinearInterVal>0.34</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>5</SplineTimes>
+		</VO>		
+		<HH>
+			<Condition Press="1000">
+				<BaseLevel>100</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>-200</MinVal>
+				<MaxVal>780</MaxVal>
+			</Condition>
+			<Condition Press="0925">
+				<BaseLevel>800</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>200</MinVal>
+				<MaxVal>1180</MaxVal>
+			</Condition>
+			<Condition Press="0850">
+				<BaseLevel>1480</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>1000</MinVal>
+				<MaxVal>1980</MaxVal>
+			</Condition>
+			<Condition Press="0700">
+				<BaseLevel>3000</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>2400</MinVal>
+				<MaxVal>3380</MaxVal>
+			</Condition>
+			<Condition Press="0600">
+				<BaseLevel>4000</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>3600</MinVal>
+				<MaxVal>4520</MaxVal>
+			</Condition>
+			<Condition Press="0500">
+				<BaseLevel>5880</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>4880</MinVal>
+				<MaxVal>6060</MaxVal>
+			</Condition>
+			<Condition Press="0400">
+				<BaseLevel>7340</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>6140</MinVal>
+				<MaxVal>8120</MaxVal>
+			</Condition>
+			<Condition Press="0300">
+				<BaseLevel>9680</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>8000</MinVal>
+				<MaxVal>10360</MaxVal>
+			</Condition>
+			<Condition Press="0250">
+				<BaseLevel>10380</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>9180</MinVal>
+				<MaxVal>12340</MaxVal>
+			</Condition>
+			<Condition Press="0200">
+				<BaseLevel>11900</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>10000</MinVal>
+				<MaxVal>13160</MaxVal>
+			</Condition>
+			<Condition Press="0150">
+				<BaseLevel>14220</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>12220</MinVal>
+				<MaxVal>15380</MaxVal>
+			</Condition>
+			<Condition Press="0100">
+				<BaseLevel>16000</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>14400</MinVal>
+				<MaxVal>17560</MaxVal>
+			</Condition>
+			<Condition Press="0070">
+				<BaseLevel>18620</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>16220</MinVal>
+				<MaxVal>19380</MaxVal>
+			</Condition>
+			<Condition Press="0050">
+				<BaseLevel>20620</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>18620</MinVal>
+				<MaxVal>21780</MaxVal>
+			</Condition>
+			<Condition Press="0030">
+				<BaseLevel>23740</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>21740</MinVal>
+				<MaxVal>25700</MaxVal>
+			</Condition>
+			<Condition Press="0020">
+				<BaseLevel>26500</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>24180</MinVal>
+				<MaxVal>27340</MaxVal>
+			</Condition>
+			<Condition Press="0010">
+				<BaseLevel>31380</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>28420</MinVal>
+				<MaxVal>32380</MaxVal>
+			</Condition>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>10,10,10,10</Spline>
+			<SplineTimes>5</SplineTimes>
+		</HH>
+		<!--风速 U分量 -->
+		<UU>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-50</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</UU>
+		<!-- 风速V分量 -->
+		<VV>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-50</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</VV>
+		<!-- 风速 -->
+		<WS>
+			<BaseLevel>4</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>1</MinVal>
+			<MaxVal>40</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>5</SplineTimes>
+		</WS>
+		<!-- 气温 -->
+		<TT>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</TT>						
+	</EPHEFC>
+	<MHWNI>
+		<!-- 高度 -->
+		<HH>
+			<Condition Press="1000">
+				<BaseLevel>100</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>-200</MinVal>
+				<MaxVal>780</MaxVal>
+			</Condition>
+			<Condition Press="0925">
+				<BaseLevel>800</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>200</MinVal>
+				<MaxVal>1180</MaxVal>
+			</Condition>
+			<Condition Press="0850">
+				<BaseLevel>1480</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>1000</MinVal>
+				<MaxVal>1980</MaxVal>
+			</Condition>
+			<Condition Press="0800">
+				<BaseLevel>1480</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>1000</MinVal>
+				<MaxVal>1980</MaxVal>
+			</Condition>
+			<Condition Press="0700">
+				<BaseLevel>3000</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>2400</MinVal>
+				<MaxVal>3380</MaxVal>
+			</Condition>
+			<Condition Press="0600">
+				<BaseLevel>4000</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>3600</MinVal>
+				<MaxVal>4520</MaxVal>
+			</Condition>
+			<Condition Press="0500">
+				<BaseLevel>5880</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>4880</MinVal>
+				<MaxVal>6060</MaxVal>
+			</Condition>
+			<Condition Press="0400">
+				<BaseLevel>7340</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>6140</MinVal>
+				<MaxVal>8120</MaxVal>
+			</Condition>
+			<Condition Press="0300">
+				<BaseLevel>9680</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>8000</MinVal>
+				<MaxVal>10360</MaxVal>
+			</Condition>
+			<Condition Press="0250">
+				<BaseLevel>10380</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>9180</MinVal>
+				<MaxVal>12340</MaxVal>
+			</Condition>
+			<Condition Press="0200">
+				<BaseLevel>11900</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>10000</MinVal>
+				<MaxVal>13160</MaxVal>
+			</Condition>
+			<Condition Press="0150">
+				<BaseLevel>14220</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>12220</MinVal>
+				<MaxVal>15380</MaxVal>
+			</Condition>
+			<Condition Press="0100">
+				<BaseLevel>16000</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>14400</MinVal>
+				<MaxVal>17560</MaxVal>
+			</Condition>
+			<Condition Press="0070">
+				<BaseLevel>18620</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>16220</MinVal>
+				<MaxVal>19380</MaxVal>
+			</Condition>
+			<Condition Press="0050">
+				<BaseLevel>20620</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>18620</MinVal>
+				<MaxVal>21780</MaxVal>
+			</Condition>
+			<Condition Press="0030">
+				<BaseLevel>23740</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>21740</MinVal>
+				<MaxVal>25700</MaxVal>
+			</Condition>
+			<Condition Press="0020">
+				<BaseLevel>26500</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>24180</MinVal>
+				<MaxVal>27340</MaxVal>
+			</Condition>
+			<Condition Press="0010">
+				<BaseLevel>31380</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>28420</MinVal>
+				<MaxVal>32380</MaxVal>
+			</Condition>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>3</SplineTimes>
+		</HH>	
+		<!-- 气温 -->
+		<TT>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</TT>
+		<!-- 积雨云 -->
+		<CB_HORIZONTAL> 
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>1</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1</MaxVal>			
+		</CB_HORIZONTAL>
+		<!-- 积冰均值 -->
+		<ICE_MEAN> 
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>2</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1</MaxVal>			
+		</ICE_MEAN>
+		<!-- 积冰最大值 -->
+		<ICE_MAX> 
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>3</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1</MaxVal>			
+		</ICE_MAX>
+		<!-- 积雨云低高 -->
+		<CB_BASE>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>2</SplineTimes>
+			<BaseLevel>400</BaseLevel>
+			<InterVal>1000</InterVal>
+			<MinVal>200</MinVal>
+			<MaxVal>10200</MaxVal>
+		</CB_BASE>
+		<!-- 积雨云顶高 -->
+		<CB_TOP>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>2</SplineTimes>
+			<BaseLevel>800</BaseLevel>
+			<InterVal>2000</InterVal>
+			<MinVal>600</MinVal>
+			<MaxVal>18000</MaxVal>
+		</CB_TOP>
+		<!-- 湍流均值 -->
+		<TURB_MEAN>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>3</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.02</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>0.2</MaxVal>
+		</TURB_MEAN>
+		<!-- 湍流最大 -->
+		<TURB_MAX>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>2</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.02</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>0.2</MaxVal>
+		</TURB_MAX>
+		<!-- 晴空湍流均值 -->
+		<CAT_MEAN>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10,10,10</Spline>
+			<SplineTimes>3</SplineTimes>
+			<BaseLevel>5</BaseLevel>
+			<InterVal>3</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>30</MaxVal>
+		</CAT_MEAN>
+		<!-- 晴空湍流最大值 -->
+		<CAT_MAX>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10,10,10</Spline>
+			<SplineTimes>3</SplineTimes>
+			<BaseLevel>5</BaseLevel>
+			<InterVal>3</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>30</MaxVal>
+		</CAT_MAX>
+		<!-- 风速 -->
+		<WS>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+			<BaseLevel>4</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>1</MinVal>
+			<MaxVal>32</MaxVal>
+		</WS>	
+	</MHWNI>
+	<NH_NSSF>
+		<!-- 高度 -->
+		<HH>
+			<Condition Press="925">
+				<BaseLevel>800</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>200</MinVal>
+				<MaxVal>1180</MaxVal>
+			</Condition>
+			<Condition Press="0850">
+				<BaseLevel>1480</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>1000</MinVal>
+				<MaxVal>1980</MaxVal>
+			</Condition>
+			<Condition Press="0700">
+				<BaseLevel>3000</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>2400</MinVal>
+				<MaxVal>3380</MaxVal>
+			</Condition>
+			<Condition Press="0500">
+				<BaseLevel>5880</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>4880</MinVal>
+				<MaxVal>6060</MaxVal>
+			</Condition>
+			<Condition Press="0010">
+				<BaseLevel>31380</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>28420</MinVal>
+				<MaxVal>32380</MaxVal>
+			</Condition>
+			<BilinearInterVal>0.33</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>3</SplineTimes>
+		</HH>
+	</NH_NSSF>
+	<NH_GZLM></NH_GZLM>
+</GRIDCONFIGXML>

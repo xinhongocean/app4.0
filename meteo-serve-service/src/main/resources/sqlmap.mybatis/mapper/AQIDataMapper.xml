@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="net.xinhong.meteoserve.service.aqi">
+    <resultMap id="AQIDataBeanMap" type="net.xinhong.meteoserve.service.domain.AQIDataBean">
+        <id column="id" property="ID" jdbcType="INTEGER"/>
+        <result column="city_id" property="cityCode" jdbcType="VARCHAR"/>
+        <result column="cityZh" property="cityName" jdbcType="VARCHAR"/>
+        <result column="issue_time" property="issueTime" jdbcType="VARCHAR"/>
+        <result column="aqi" property="aqi" jdbcType="VARCHAR"/>
+        <result column="co" property="co" jdbcType="VARCHAR"/>
+        <result column="no2" property="no2" jdbcType="VARCHAR"/>
+        <result column="o3" property="o3" jdbcType="VARCHAR"/>
+        <result column="pm10" property="pm10" jdbcType="VARCHAR"/>
+        <result column="pm25" property="pm25" jdbcType="VARCHAR"/>
+        <result column="qlty" property="qlty" jdbcType="VARCHAR"/>
+        <result column="so2" property="so2" jdbcType="VARCHAR"/>
+    </resultMap>
+
+
+    <resultMap id="AQIListBeanMap" type="net.xinhong.meteoserve.service.domain.AQIListBean">
+        <result column="city_id" property="cityCode" jdbcType="VARCHAR"/>
+        <result column="aqi" property="aqi" jdbcType="VARCHAR"/>
+        <result column="lat" property="lat" jdbcType="FLOAT"/>
+        <result column="lng" property="lng" jdbcType="FLOAT"/>
+        <result column="dlevel" property="dlv" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="AQIData_List">
+		a.city_id city_id, b.cityZh cityZh, issue_time, aqi, co, no2, o3, pm10, pm25, qlty, so2
+	</sql>
+
+    <!--根据给定的站号查询空气质量数据-->
+    <select id="selectbycitycode"
+            parameterType="HashMap"
+            resultMap="AQIDataBeanMap">
+        SELECT
+        <include refid="AQIData_List"/>
+        FROM ZR_AQI_INFO a, ZD_CITY_INFO b
+        <where>
+            a.city_id = #{citycode}
+            and a.city_id = b.city_id
+        </where>
+        ORDER BY issue_time DESC
+        <if test="limit != null">
+            limit #{limit} offset 0
+        </if>
+        <if test="limit == null">
+            limit 10 offset 0
+        </if>
+    </select>
+
+    <!--查询空气质量分布数据-->
+    <select id="selectaqilist"
+            parameterType="HashMap"
+            resultMap="AQIListBeanMap">
+        SELECT
+          a.city_id city_id, aqi, b.lat lat, b.lng lng, b.dlevel dlevel
+        FROM ZR_AQI_INFO a, ZD_CITY_INFO b
+        <where>
+            <!--issue_time > DATE_SUB(NOW(), INTERVAL 2.2 HOUR)-->
+
+            latest_flag = 1
+            and a.city_id = b.city_id
+            <if test="dlevel != null">
+                and dlevel = #{dlevel}
+            </if>
+            <if test="dlevel == null">
+                and  (dlevel = 1 or dlevel = 2)
+            </if>
+        </where>
+        <if test="limit != null">
+            limit #{limit} offset 0
+        </if>
+    </select>
+</mapper>

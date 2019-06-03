@@ -17,7 +17,8 @@ import java.util.List;
 public interface OriginalDataDao {
 
     List<ZHS_ICOADS_ELES> getICOADS(@Param("grid") int gridid, @Param("sdate") String sdate, @Param("edate") String edate,
-                                    @Param("sline") int sline,@Param("eline")int eline);
+                                    @Param("sline") int sline, @Param("eline") int eline);
+
     int getICOADSPages(@Param("grid") int gridid, @Param("sdate") String sdate, @Param("edate") String edate);
 
     List getINTTYPHIDX(@Param("year") int year);
@@ -29,6 +30,7 @@ public interface OriginalDataDao {
     List<ZH_TYPH_JMA> getJMATYPH(@Param("id") String id);
 
     List getTPCTYPHIDX(@Param("year") int year);
+
     List<ZH_TYPH_TPC> getTPCTYPH(@Param("id") String id);
 
     List<GTSPPData> getGtsppBuoy(@Param("id") String id);

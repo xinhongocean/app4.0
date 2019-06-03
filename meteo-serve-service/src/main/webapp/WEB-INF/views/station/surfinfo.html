@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单站信息显示</title>
+</head>
+<body>
+#foreach($stationinfo in $stationinfolist)
+    <li>${stationinfo.cname}, ${stationinfo.ename}, ${stationinfo.stationCode}, ${stationinfo.lat},  ${stationinfo.lng}
+        ${stationinfo.py}, ${stationinfo.level}, ${stationinfo.countryCode}</li>
+#end
+
+
+</body>
+</html>

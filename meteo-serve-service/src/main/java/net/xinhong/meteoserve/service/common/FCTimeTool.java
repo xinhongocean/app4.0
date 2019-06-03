@@ -43,6 +43,34 @@ public final class FCTimeTool {
         return resDate;
     }
 
+
+
+
+    public static DateTime getHY1SuoStartTime(DateTime setDate, int delayMinutes){
+        DateTime resDate = new DateTime(setDate.getYear(), setDate.getMonthOfYear(),
+                setDate.getDayOfMonth(), setDate.getHourOfDay(), 0);
+        resDate=resDate.minusMinutes(delayMinutes);
+        //1SUO起报归并到20时
+        while (resDate.getHourOfDay() != 20) resDate = resDate.minusHours(1);
+
+//        if (resDate.getHourOfDay() < 8 || resDate.getHourOfDay() >= 20){ //归并到20时
+//            while (resDate.getHourOfDay() != 20) resDate = resDate.minusHours(1);
+//        } else { //归并到08时
+//            while (resDate.getHourOfDay() != 8) resDate = resDate.minusHours(1);
+//        }
+        if (delayMinutes == 0)
+            return resDate;
+
+        //然后确定归并的起始时间与当前时间相差值，确定该起报时间数据是否已成功生成，如没有生成，则向前推12小时
+        if (delayMinutes == -9999)
+            delayMinutes = 17*60;  //设置为负数时,默认预报产品晚17小时（晚上8点起报数据第二天下午1点后完成处理）
+        long subMinutes = Minutes.minutesBetween(resDate, DateTime.now()).getMinutes();
+        if (subMinutes < delayMinutes){
+            resDate = resDate.minusHours(12);
+        }
+        return resDate;
+    }
+
     //海洋类的预报（目前只引入了00时起报的数据）
     public static DateTime getHYFCStartTime(DateTime setDate, long delayMinutes){
         DateTime resDate = new DateTime(setDate.getYear(), setDate.getMonthOfYear(),
@@ -59,6 +87,7 @@ public final class FCTimeTool {
         }
         return resDate;
     }
+
 
 
     /**

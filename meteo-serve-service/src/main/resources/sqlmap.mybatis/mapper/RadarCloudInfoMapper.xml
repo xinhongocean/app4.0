@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="net.xinhong.meteoserve.service.radarcloudfax">
+    <resultMap id="StationRadarInfoBeanMap" type="net.xinhong.meteoserve.service.domain.StationRadarInfoBean">
+        <result column="station_id" property="stationID" jdbcType="VARCHAR"/>
+        <result column="station_cname" property="cname" jdbcType="VARCHAR"/>
+        <result column="station_ename" property="ename" jdbcType="VARCHAR"/>
+        <result column="clat" property="clat" jdbcType="FLOAT"/>
+        <result column="clng" property="clng" jdbcType="FLOAT"/>
+        <result column="slat" property="slat" jdbcType="FLOAT"/>
+        <result column="slng" property="slng" jdbcType="FLOAT"/>
+        <result column="elat" property="elat" jdbcType="FLOAT"/>
+        <result column="elng" property="elng" jdbcType="FLOAT"/>
+        <result column="province" property="province" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="StationRadarInfo_Base_Column_List">
+		station_id, station_cname, station_ename, clat, clng, slat, slng, elat, elng, province
+	</sql>
+
+    <!--按雷达编号精确查询-->
+    <select id="selectbyStationRadarID"
+            parameterType="HashMap"
+            resultMap="StationRadarInfoBeanMap">
+        SELECT
+        <include refid="StationRadarInfo_Base_Column_List"/>
+        FROM ZD_SINGLERADAR_INFO_WEATHER
+        <where>
+            station_id = #{station_id}
+        </where>
+    </select>
+
+    <!--按雷达中文名查询-->
+    <select id="selectbyStationRadarCName"
+            parameterType="HashMap"
+            resultMap="StationRadarInfoBeanMap">
+        SELECT
+        <include refid="StationRadarInfo_Base_Column_List"/>
+        FROM ZD_SINGLERADAR_INFO_WEATHER
+        <where>
+            station_cname = #{station_cname}
+        </where>
+    </select>
+
+
+    <!--查询单站雷达图位置分布-->
+    <select id="selectAllStationRadarDistribInfo"
+            parameterType="HashMap"
+            resultMap="StationRadarInfoBeanMap">
+        SELECT
+         station_cname, station_ename, station_id, clat, clng, province
+        FROM ZD_SINGLERADAR_INFO_WEATHER
+    </select>
+
+    <!--查询距离给定经纬度最近的雷达站点,查询结果按由近到远排列，最多5条记录-->
+    <select id="selectNearestbyLatLng"
+            parameterType="HashMap"
+            resultMap="StationRadarInfoBeanMap">
+        SELECT<include refid="StationRadarInfo_Base_Column_List"/>, abs(clat - #{lat}) + abs(clng - #{lng}) resdeltaxy
+        FROM ZD_SINGLERADAR_INFO_WEATHER
+        <where>
+            <if test="lat != null">
+                clat &gt; (#{lat} - #{deltay}) AND clat &lt; (#{lat} + #{deltay})
+            </if>
+            <if test="lng != null">
+                AND clng &gt; (#{lng} - #{deltax}) AND clng &lt; (#{lng} + #{deltax})
+            </if>
+        </where>
+        ORDER BY resdeltaxy ASC
+        limit 5 offset 0
+    </select>
+
+</mapper>

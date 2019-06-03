@@ -40,7 +40,7 @@ public class GTSPPDataDaoImpl implements GTSPPDataDao {
         }
         boolean islast = false; //是否向前推一个起报时间
         int looptime=0;
-        while(strData==null||(strData!=null&&strData.size()==0)&&looptime<10){
+        while(strData==null||(strData!=null&&strData.size()==0)&&looptime<100){
             date = date.minusDays(1);
             key = DataTypeConst.GTSPP_POINT_PREFIX + ":" +date.toString("yyyyMMdd");
             try {

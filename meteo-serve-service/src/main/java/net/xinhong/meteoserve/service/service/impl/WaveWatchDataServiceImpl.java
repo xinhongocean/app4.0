@@ -42,7 +42,6 @@ public class WaveWatchDataServiceImpl implements WaveWatchDataService {
         }
         DateTime resDate = restime.resDate;
         String VTI = restime.resVTI;
-
         String ryear = resDate.toString("yyyy");
         String rmonth = resDate.toString("MM");
         String rday = resDate.toString("dd");

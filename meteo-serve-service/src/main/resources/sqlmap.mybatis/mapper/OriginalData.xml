@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.xinhong.meteoserve.service.dao.OriginalDataDao">
+
+    <sql id="ICoads_Column_List">
+        ODATE,YEAR,MONTH,DAY,HOUR,MINUTE,LI,LATITUDE,LONGITUDE,GRID,DI,D,WI,W,VI,VV,WW,W1,SLP,A,PPP,IT,AT,WBTI
+        ,WBT,DPTI,DPT,SI,SST,ASTD,RH,N,NH,CL,CM,CH,HI,H,WD,WP,WH,SD,SP,SH,SS,DUPS
+    </sql>
+
+    <select id="getICOADS" resultType="net.xinhong.meteoserve.service.domain.origin.ZHS_ICOADS_ELES">
+
+        select <include refid="ICoads_Column_List"/>
+        from(
+        (select rownum rn,uo.* from
+        (select <include refid="ICoads_Column_List"/>
+        from zhs_icoads_eles u where odate>=to_date(#{sdate},'YYYYMMDD')
+        and odate &lt;=to_date(#{edate},'YYYYMMDD') and grid = #{grid}) uo
+        where rownum &lt;#{eline})) ua
+        where ua.rn>=#{sline}
+     </select>
+
+    <select id="getICOADSPages" resultType="int">
+        select count(1)
+        from zhs_icoads_eles where odate>=to_date(#{sdate},'YYYYMMDD')
+        and odate &lt;=to_date(#{edate},'YYYYMMDD') and grid = #{grid}
+    </select>
+
+
+
+        <!--<if test="grid !=null">  and grid in-->
+        <!--<foreach collection="grid" item="item" index="" open="(" separator="," close=")">#{item}</foreach>-->
+        <!--</if>-->
+        <!--<if test="month !=null ">and extract(month from odate) in-->
+            <!--<foreach-->
+                    <!--collection="month" item="item2" index="" open="(" separator="," close=")">#{item2}-->
+            <!--</foreach>-->
+        <!--</if>-->
+        <!--<if test="year !=null ">-->
+            <!--and-->
+            <!--extract(year from odate) in-->
+            <!--<foreach collection="year" item="item3" index="" open="(" separator="," close=")">#{item3}</foreach>-->
+        <!--</if>-->
+         <!--and rownum &lt; 40-->
+
+
+
+    <select id="getLandTYPHData" resultType="net.xinhong.meteoserve.service.domain.origin.ZH_TYPH_JMA">
+        select  a.INTNUM INTNUM,a.ADATE ADATE, a.ind IND,a.GRADE GRADE, a.CLAT CLAT,a.CLON CLON
+        ,a.PRESS PRESS, a.MAXWS MAXWS,a.WINDRD50 WINDRD50,a.MAXR50 MAXR50,a.MINR50 MINR50,a.WINDRD30 WINDRD30
+        ,a.MAXR30 MAXR30,a.MINR30 MINR30,b.province PROVINCE
+        from (select * from zh_typh_jma where adate between #{sdate} and #{edate})a,
+        (select * from zh_typh_land where province=#{province}) b
+        where a.intnum=b.intnum order by a.intnum,adate
+    </select>
+
+    <select id="getWholeLandTYPHData" resultType="net.xinhong.meteoserve.service.domain.origin.ZH_TYPH_JMA">
+    select  a.INTNUM INTNUM,a.ADATE ADATE, a.ind IND,a.GRADE GRADE, a.CLAT CLAT,a.CLON CLON
+    ,a.PRESS PRESS, a.MAXWS MAXWS,a.WINDRD50 WINDRD50,a.MAXR50 MAXR50,a.MINR50 MINR50,a.WINDRD30 WINDRD30
+    ,a.MAXR30 MAXR30,a.MINR30 MINR30,b.province PROVINCE
+    from (select * from zh_typh_jma where adate between #{sdate} and #{edate})a,
+    (select * from zh_typh_land ) b
+    where a.intnum=b.intnum order by a.intnum,adate
+</select>
+
+    <select id="getJMATYPH" resultType="net.xinhong.meteoserve.service.domain.origin.ZH_TYPH_JMA">
+        select  a.INTNUM INTNUM,a.ADATE ADATE, a.ind IND,a.GRADE GRADE, a.CLAT CLAT,a.CLON CLON
+    ,a.PRESS PRESS, a.MAXWS MAXWS,a.WINDRD50 WINDRD50,a.MAXR50 MAXR50,a.MINR50 MINR50,a.WINDRD30 WINDRD30
+    ,a.MAXR30 MAXR30,a.MINR30 MINR30,NAME,rownum from zh_typh_jma a
+    where (name||':'|| intnum)=#{id}
+    </select>
+
+    <select id="getJMATYPHIDX" resultType="String">
+        select  distinct (name||':'|| intnum) from zh_typh_jma a where
+        extract(year from adate)=#{year}
+    </select>
+
+    <select id="getINTTYPH" resultType="net.xinhong.meteoserve.service.domain.origin.ZH_TYPH_INT">
+        select BASIN,CY,LDATE,TECHNUM,TECH,TAU,LATN,LONE,VMAX,MSLP,TY,RAD,WINDCODE,RAD1,RAD2,RAD3,RAD4,RADP,RRP,MRD,
+        GUSTS,EYE,SUBREGION,MAXSEAS,INITIALS,DIR,SPEED,STORMNAME,DEPTH,SEAS,SEASCODE,SEAS1,SEAS2,SEAS3,SEAS4,REMARKS,rownum
+         from zh_typh_int where  (EXTRACT(YEAR FROM LDATE)||CY)=#{id}
+         --and rownum &lt; 40
+    </select>
+
+    <select id="getINTTYPHIDX" resultType="String">
+        select  distinct (STORMNAME||':'|| EXTRACT(YEAR FROM LDATE)||CY) from
+         zh_typh_int a where extract(year from ldate)=#{year}
+    </select>
+
+   <!--TODO-->
+    <select id="getTPCTYPH" resultType="net.xinhong.meteoserve.service.domain.origin.ZH_TYPH_TPC">
+        select adv,lat,lon,time,wind,pr,stat,stormname,id,rownum from zh_typh_tpc
+        where extract(year from time)=#{year}
+        --and rownum &lt; 40
+    </select>
+
+    <select id="getTPCTYPHIDX" resultType="String">
+        select  distinct (name||':'|| intnum) from zh_typh_tpc a where extract(year from adate)=#{year}
+    </select>
+
+    <select id="getGtsppBuoy"  resultType="net.xinhong.meteoserve.service.domain.origin.GTSPPData">
+        select cruise_id,time,
+            latitude,longitude,z,temperature,salinity FROM ZH_GTSPP
+            where cruise_id=#{id} order by time,z
+    </select>
+
+</mapper>

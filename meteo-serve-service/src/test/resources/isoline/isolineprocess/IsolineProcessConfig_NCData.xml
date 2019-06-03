@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NCCONFIGXML version="1.0">
+	<AllType>
+		<!-- 温度强度 -->
+		<T_STRENGDEPTH>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>150</MaxVal>
+		</T_STRENGDEPTH>
+		<!-- 密度强度 -->
+		<ROU_STRENGDEPTH>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10,10</Spline>
+			<SplineTimes>3</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>110</MaxVal>
+		</ROU_STRENGDEPTH>
+		<!-- 声速强度 -->
+		<SOUND_STRENGDEPTH>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>5</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>-1</MinVal>
+			<MaxVal>150</MaxVal>
+		</SOUND_STRENGDEPTH>
+		<!-- 10米U -->
+		<U10>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>0</Spline>
+			<SplineTimes>0</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>245</MaxVal>
+		</U10>  
+		<!-- 10米V -->
+		<V10>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>0</Spline>
+			<SplineTimes>0</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>245</MaxVal>
+		</V10>
+		<WS>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+			<BaseLevel>4</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>1</MinVal>
+			<MaxVal>32</MaxVal>
+		</WS>
+		<!-- 夏季表层温度场 -->
+		<SMTS>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>50</MaxVal>
+		</SMTS>  
+		<!-- 海表面高度 --> 
+		<ESURF>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>5</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>-50</MinVal>
+			<MaxVal>150</MaxVal>
+		</ESURF> 
+		<!-- 表层东向流速 -->
+		<U>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>-150</MinVal>
+			<MaxVal>150</MaxVal>
+		</U>
+		<!-- 表层西向流速 -->  
+		<V>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>-150</MinVal>
+			<MaxVal>150</MaxVal>
+		</V>  
+		<!-- 表层流速场 -->
+		<SPEEDS>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>6</SplineTimes>
+			<BaseLevel>200</BaseLevel>
+			<InterVal>200</InterVal>
+			<MinVal>1</MinVal>
+			<MaxVal>1500</MaxVal>
+		</SPEEDS> 
+		<!-- 锋面(强流)影响深度 -->
+		<DEP>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>50</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1000</MaxVal>
+		</DEP>
+		<!-- 锋面(流轴)位置 -->
+		<!--POS>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>0</Spline>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.1</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>1</MaxVal>
+		</POS-->
+		<!-- 速度锋面强度 -->
+		<V_FRONT_STRENG>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>300</MaxVal>
+		</V_FRONT_STRENG> 
+		<!-- 声速锋面强度 -->
+		<S_FRONT_STRENG>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>1</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>100</MaxVal>
+		</S_FRONT_STRENG>  
+		<!-- 温度锋面强度 -->
+		<T_FRONT_STRENG>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>7</Spline>
+			<SplineTimes>1</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>20</MaxVal>
+		</T_FRONT_STRENG>   
+		<!-- 表层声速场 -->
+		<SOUNDS>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>7</Spline>
+			<SplineTimes>1</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>1000</MinVal>
+			<MaxVal>2000</MaxVal>
+		</SOUNDS> 
+		<!-- 下界深度 -->
+		<DOWNDEPTH>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>5</SplineTimes>
+			<BaseLevel>-100</BaseLevel>
+			<InterVal>100</InterVal>
+			<MinVal>-4000</MinVal>
+			<MaxVal>-10</MaxVal>
+		</DOWNDEPTH> 
+		<!-- 厚度 -->
+		<THICKDEPTH>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>5</SplineTimes>
+			<BaseLevel>100</BaseLevel>
+			<InterVal>200</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>4000</MaxVal>
+		</THICKDEPTH> 
+		<!-- 上界深度 -->
+		<UPDEPTH>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>4</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>-200</MinVal>
+			<MaxVal>0</MaxVal>
+		</UPDEPTH>
+		<!-- 2米温度 -->
+		<T2>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</T2>
+		<!-- 海面高 -->	
+		<HYHH>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>5</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>-50</MinVal>
+			<MaxVal>150</MaxVal>
+		</HYHH>	
+		<!-- 温度 -->
+		<HYTT>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>-10</MinVal>
+			<MaxVal>50</MaxVal>
+		</HYTT>
+		<!-- 盐度 -->
+		<HYST>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>0</SplineTimes>
+			<BaseLevel>20</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>50</MaxVal>
+		</HYST>
+	</AllType>		
+</NCCONFIGXML>

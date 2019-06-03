@@ -1,0 +1,8 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>管理系统-$!title</title>
+<link rel="stylesheet" type="text/css" href="#springUrl('')/static/tools/bootstrap/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="#springUrl('')/static/css/lbs.css"/>
+
+<script charset="utf-8" type="text/javascript" src="#springUrl('')/static/tools/jquery.js"></script>
+<script charset="utf-8" type="text/javascript" src="#springUrl('')/static/tools/bootstrap/js/bootstrap.min.js"></script>
+<script charset="utf-8" type="text/javascript" src="#springUrl('')/static/tools/bootstrap-paginator.min.js"></script>

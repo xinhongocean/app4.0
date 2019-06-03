@@ -1,0 +1,11 @@
+{
+"field":{"STATION_CODE":"STATION","YEAR":"YEAR","MONTH":"MONTH","DAY":"DAY","HOUR":"HOUR","MINUTE":"MINUTE","PRESS":"PRESS"},
+"data":{
+"WS":{"ENG":"WS","CHN":"风速"},
+"WD":{"ENG":"WD","CHN":"风向"},
+"TT":{"ENG":"AT","CHN":"气温"},
+"TD":{"ENG":"TD","CHN":"露点温度"},
+"RH":{"ENG":"RH","CHN":"相对湿度"},
+"HH":{"ENG":"HH","CHN":"位势米"}
+}
+}

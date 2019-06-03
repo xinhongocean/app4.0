@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>站点信息查询</title>
+</head>
+<body>
+<h3>站点信息查询</h3>
+<form id="stationinfo_search" method="post">
+    名称:<input type="text" class="form-control" id="cname_input" placeholder="请输入站点名称">
+    </br>
+    拼音:<input type="text" class="form-control" id="py_input" placeholder="请输入站点拼音">
+    </br>
+    经度:<input type="text" class="form-control" id="lng_input" placeholder="请输入经度">
+    </br>
+    纬度:<input type="text" class="form-control" id="lat_input" placeholder="请输入纬度">
+    </br>
+    <button type="button" class="btn btn-info btn-block" id="btncommit_search">提交</button>
+</form>
+<div>
+    提交结果:
+    <div class="form-control" id="sationinfo_search_result">
+    这里显示查询结果
+    </div>
+</div>
+
+<script src="#springUrl('')/static/js/lib/jquery-1.11.2.min.js"></script>
+<script src="#springUrl('')/static/js/lib/bootstrap.min.js"></script>
+<!--<script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp"></script>-->
+<script src="#springUrl('')/static/js/stationinfo.js"></script>
+</body>
+</html>

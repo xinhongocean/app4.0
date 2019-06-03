@@ -1,0 +1,2015 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SCATTERCONFIGXML version="1.0">
+	<!-- <GridedType>TRIANGULATION</GridedType>,INVERSE_DISTANCE -->
+	<!-- 变温、变压、变高、变露点温度采用三角网格剖分法 -->
+	<AllType>		
+		<!-- 海平面气压 -->
+		<SLP>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<!-- <xDelta>1.5</xDelta>
+			<yDelta>1.5</yDelta> -->
+			<distR1>4</distR1>
+			<dataR3>20</dataR3>
+			<validDataR>1.2</validDataR>
+			<gsR>15</gsR>
+			<BaseLevel>1000</BaseLevel>
+			<InterVal>2.5</InterVal>
+			<MinVal>900</MinVal>
+			<MaxVal>1200</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10,10,8</Spline>
+			<SplineTimes>4</SplineTimes>
+			<GridedType>INVERSE_DISTANCE</GridedType>			
+		</SLP>
+		<STAT_M_SLP>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<!-- <xDelta>1.5</xDelta>
+			<yDelta>1.5</yDelta> -->
+			<distR1>4</distR1>
+			<dataR3>20</dataR3>
+			<validDataR>1.2</validDataR>
+			<gsR>15</gsR>
+			<BaseLevel>1000</BaseLevel>
+			<InterVal>2.5</InterVal>
+			<MinVal>900</MinVal>
+			<MaxVal>1200</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>3</SplineTimes>			
+		</STAT_M_SLP>
+		<STAT_MAX_SLP>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<!-- <xDelta>1.5</xDelta>
+			<yDelta>1.5</yDelta> -->
+			<distR1>4</distR1>
+			<dataR3>20</dataR3>
+			<validDataR>1.2</validDataR>
+			<gsR>15</gsR>
+			<BaseLevel>1000</BaseLevel>
+			<InterVal>2.5</InterVal>
+			<MinVal>900</MinVal>
+			<MaxVal>1200</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>3</SplineTimes>			
+		</STAT_MAX_SLP>		
+		<STAT_MIN_SLP>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<!-- <xDelta>1.5</xDelta>
+			<yDelta>1.5</yDelta> -->
+			<distR1>4</distR1>
+			<dataR3>20</dataR3>
+			<validDataR>1.2</validDataR>
+			<gsR>15</gsR>
+			<BaseLevel>1000</BaseLevel>
+			<InterVal>2.5</InterVal>
+			<MinVal>900</MinVal>
+			<MaxVal>1200</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10,5</Spline>
+			<SplineTimes>3</SplineTimes>			
+		</STAT_MIN_SLP>	
+		
+		
+		<!-- 本站气压 -->
+		<LP>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>3</distR1>
+			<!-- <dataR3>30</dataR3>-->
+			<dataR3>300</dataR3>
+			<validDataR>1</validDataR>
+			<gsR>15</gsR>
+			<BaseLevel>1000</BaseLevel>
+			<InterVal>40</InterVal>
+			<MinVal>480</MinVal>
+			<MaxVal>1160</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</LP>
+		<STAT_M_LP>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>3</distR1>
+			<!-- <dataR3>30</dataR3>-->
+			<dataR3>300</dataR3>
+			<validDataR>1</validDataR>
+			<gsR>15</gsR>
+			<BaseLevel>1000</BaseLevel>
+			<InterVal>40</InterVal>
+			<MinVal>480</MinVal>
+			<MaxVal>1160</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</STAT_M_LP>
+		<!-- 露点温度 -->
+		<TD>
+			<Condition Press="9999">
+				<distR1>3</distR1>
+				<dataR3>30</dataR3>
+				<validDataR>0.6</validDataR>
+				<gsR>15</gsR>
+				<BaseLevel>0</BaseLevel>
+				<InterVal>4</InterVal>
+				<MinVal>-90</MinVal>
+				<MaxVal>50</MaxVal>
+			</Condition>			
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>5</distR1>
+			<dataR3>40</dataR3>
+			<validDataR>0.8</validDataR>
+			<!-- <gsR>12</gsR> -->
+			<gsR>10</gsR>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>5</Spline>
+			<SplineTimes>1</SplineTimes>
+		</TD>	
+		<STAT_M_TD>
+			<Condition Press="9999">
+				<distR1>3</distR1>
+				<dataR3>30</dataR3>
+				<validDataR>0.6</validDataR>
+				<gsR>15</gsR>
+				<BaseLevel>0</BaseLevel>
+				<InterVal>4</InterVal>
+				<MinVal>-90</MinVal>
+				<MaxVal>50</MaxVal>
+			</Condition>			
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>5</distR1>
+			<dataR3>40</dataR3>
+			<validDataR>0.8</validDataR>
+			<!-- <gsR>12</gsR> -->
+			<gsR>10</gsR>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>5</Spline>
+			<SplineTimes>1</SplineTimes>
+		</STAT_M_TD>
+		<STAT_M_MAX_TD>
+			<Condition Press="9999">
+				<distR1>3</distR1>
+				<dataR3>30</dataR3>
+				<validDataR>0.6</validDataR>
+				<gsR>15</gsR>
+				<BaseLevel>0</BaseLevel>
+				<InterVal>4</InterVal>
+				<MinVal>-90</MinVal>
+				<MaxVal>50</MaxVal>
+			</Condition>			
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>5</distR1>
+			<dataR3>40</dataR3>
+			<validDataR>0.8</validDataR>
+			<!-- <gsR>12</gsR> -->
+			<gsR>10</gsR>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>5</Spline>
+			<SplineTimes>1</SplineTimes>
+		</STAT_M_MAX_TD>
+		<STAT_M_MIN_TD>
+			<Condition Press="9999">
+				<distR1>3</distR1>
+				<dataR3>30</dataR3>
+				<validDataR>0.6</validDataR>
+				<gsR>15</gsR>
+				<BaseLevel>0</BaseLevel>
+				<InterVal>4</InterVal>
+				<MinVal>-90</MinVal>
+				<MaxVal>50</MaxVal>
+			</Condition>			
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>5</distR1>
+			<dataR3>40</dataR3>
+			<validDataR>0.8</validDataR>
+			<!-- <gsR>12</gsR> -->
+			<gsR>10</gsR>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>5</Spline>
+			<SplineTimes>1</SplineTimes>
+		</STAT_M_MIN_TD>										
+		<!-- 相对湿度 -->
+		<RH>
+			<Condition Press="9999">
+				<distR1>3</distR1>
+				<dataR3>30</dataR3>
+				<validDataR>0.6</validDataR>
+				<gsR>15</gsR>
+			</Condition>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>2</distR1>
+			<dataR3>100</dataR3>
+			<validDataR>0.6</validDataR>
+			<gsR>12</gsR>
+			<BaseLevel>50</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</RH>
+		<STAT_M_RH>
+			<Condition Press="9999">
+				<distR1>3</distR1>
+				<dataR3>30</dataR3>
+				<validDataR>0.6</validDataR>
+				<gsR>15</gsR>
+			</Condition>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>2</distR1>
+			<dataR3>100</dataR3>
+			<validDataR>0.6</validDataR>
+			<gsR>12</gsR>
+			<BaseLevel>50</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</STAT_M_RH>
+		<STAT_MIN_RH>
+			<Condition Press="9999">
+				<distR1>3</distR1>
+				<dataR3>30</dataR3>
+				<validDataR>0.6</validDataR>
+				<gsR>15</gsR>
+			</Condition>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>2</distR1>
+			<dataR3>100</dataR3>
+			<validDataR>0.6</validDataR>
+			<gsR>12</gsR>
+			<BaseLevel>50</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</STAT_MIN_RH>
+		<!-- 能见度 -->
+		<VIS>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>3</distR1>
+			<dataR3>30</dataR3>
+			<validDataR>0.6</validDataR>
+			<gsR>15</gsR>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2000</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>100000</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</VIS>
+		<!-- 云量 -->
+		<STAT_M_NH>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1.5</xDelta>
+			<yDelta>1.5</yDelta>
+			<distR1>3</distR1>
+			<dataR3>30</dataR3>
+			<validDataR>0.6</validDataR>
+			<gsR>15</gsR>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>10</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</STAT_M_NH>
+		<STAT_M_N>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1.5</xDelta>
+			<yDelta>1.5</yDelta>
+			<distR1>3</distR1>
+			<dataR3>30</dataR3>
+			<validDataR>0.6</validDataR>
+			<gsR>15</gsR>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>10</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</STAT_M_N>
+		
+		<!-- 3小时变压 -->
+		<DP03>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>0.125</xDelta>
+			<yDelta>0.125</yDelta>
+			<distR1>3</distR1>
+			<dataR3>20</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>15</gsR>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>-30</MinVal>
+			<MaxVal>30</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>5,10</Spline>
+			<SplineTimes>1</SplineTimes>
+			<GridedType>TRIANGULATION</GridedType>
+		</DP03>
+		<!-- 24小时变压 -->
+		<DP24>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>0.125</xDelta>
+			<yDelta>0.125</yDelta>
+			<distR1>3</distR1>
+			<dataR3>20</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>15</gsR>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-60</MinVal>
+			<MaxVal>60</MaxVal>			 
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>5,10</Spline>
+			<SplineTimes>0</SplineTimes>
+			<GridedType>TRIANGULATION</GridedType>
+		</DP24>
+		<!-- 24小时变温 -->
+		<DT24>
+			<Condition Press="9999">
+				<distR1>3</distR1>
+				<dataR3>30</dataR3>
+				<validDataR>0.8</validDataR>
+				<gsR>15</gsR>
+			</Condition>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>0.125</xDelta>
+			<yDelta>0.125</yDelta>
+			<distR1>5</distR1>
+			<dataR3>40</dataR3> 
+			<!-- <distR1>3</distR1>
+			<dataR3>20</dataR3> -->
+			<validDataR>0.8</validDataR>
+			<gsR>10</gsR>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>5,10</Spline>
+			<SplineTimes>1</SplineTimes>
+			<GridedType>TRIANGULATION</GridedType>
+		</DT24>
+		
+		<!-- 3小时变温 -->
+		<DT03>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>0.125</xDelta>
+			<yDelta>0.125</yDelta>
+			<distR1>5</distR1>
+			<dataR3>40</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>10</gsR>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>5,10</Spline>
+			<SplineTimes>1</SplineTimes>
+			<GridedType>TRIANGULATION</GridedType>
+		</DT03>
+		<!-- 3小时变露点温度 -->
+		<DTD03>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>0.125</xDelta>
+			<yDelta>0.125</yDelta>
+			<distR1>3</distR1>
+			<dataR3>30</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>15</gsR>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>5,10</Spline>
+			<SplineTimes>1</SplineTimes>
+			<GridedType>TRIANGULATION</GridedType>
+		</DTD03>
+		<!-- 3小时变高 -->
+		<DH03>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>0.125</xDelta>
+			<yDelta>0.125</yDelta>
+			<distR1>3</distR1>
+			<dataR3>30</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>15</gsR>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-20</MinVal>
+			<MaxVal>20</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>5,10</Spline>
+			<SplineTimes>2</SplineTimes>
+			<GridedType>TRIANGULATION</GridedType>
+		</DH03>
+		<!-- 24小时变高 -->
+		<DH24>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>0.125</xDelta>
+			<yDelta>0.125</yDelta>
+			<!-- <distR1>3</distR1>
+			<dataR3>30</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>15</gsR> -->
+			<distR1>5</distR1>
+			<dataR3>50</dataR3>
+			<validDataR>1.2</validDataR>
+			<gsR>12</gsR>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>-200</MinVal>
+			<MaxVal>200</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>5,10</Spline>
+			<SplineTimes>1</SplineTimes>
+			<GridedType>TRIANGULATION</GridedType>
+		</DH24>
+		<!-- 3小时变假相当位温 -->
+		<DTB03>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>0.125</xDelta>
+			<yDelta>0.125</yDelta>
+			<distR1>3</distR1>
+			<dataR3>30</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>15</gsR>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>50</MaxVal>
+			<BilinearInterVal>0.5</BilinearInterVal>
+			<Spline>5,10</Spline>
+			<SplineTimes>1</SplineTimes>
+			<GridedType>TRIANGULATION</GridedType>
+		</DTB03>
+		<!-- 假相当位温 -->
+		<TB>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>3</distR1>
+			<dataR3>30</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>15</gsR>
+			<BaseLevel>300</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>100</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>2</SplineTimes>
+		</TB>
+		<!-- 风向 -->
+		<WD>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>3</distR1>
+			<dataR3>30</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>15</gsR>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>10</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>360</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</WD>
+		<!-- 沙氏指数 -->
+		<SI>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>3</distR1>
+			<dataR3>30</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>15</gsR>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>1</InterVal>
+			<MinVal>-15</MinVal>
+			<MaxVal>20</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</SI>
+		<!-- K指数 -->
+		<KI>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>3</distR1>
+			<dataR3>30</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>15</gsR>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>-50</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</KI>
+		<!-- 位势稳定度 -->
+		<CONVEI>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>3</distR1>
+			<dataR3>30</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>15</gsR>
+			<BaseLevel>2</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</CONVEI>
+		<!-- 风切变 -->
+		<VWINDSHEARWS>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>3</distR1>
+			<dataR3>30</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>15</gsR>
+			<BaseLevel>2</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</VWINDSHEARWS>
+		<!-- 威胁指数 -->
+		<SW>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>3</distR1>
+			<dataR3>30</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>15</gsR>
+			<BaseLevel>300</BaseLevel>
+			<InterVal>20</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>500</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</SW>
+		<!-- 理查逊数 -->
+		<RI>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>3</distR1>
+			<dataR3>30</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>15</gsR>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>2</InterVal>
+			<MinVal>-20</MinVal>
+			<MaxVal>20</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>3</SplineTimes>
+		</RI>
+		
+		<!-- 累积降水 -->
+		<RAIN01>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<distR1>5</distR1>
+			<dataR3>120</dataR3>
+			<validDataR>0.38</validDataR>
+			<gsR>12</gsR>
+			<BaseLevel>1.0</BaseLevel>
+			<InterVal>1.0</InterVal>
+			<MinVal>0.1</MinVal>
+			<MaxVal>400</MaxVal>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>2</Spline>
+			<SplineTimes>1</SplineTimes>
+		</RAIN01>
+		<RAIN02>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<distR1>5</distR1>
+			<dataR3>120</dataR3>
+			<validDataR>0.38</validDataR>
+			<gsR>12</gsR>
+			<BaseLevel>1.0</BaseLevel>
+			<InterVal>1.0</InterVal>
+			<MinVal>0.1</MinVal>
+			<MaxVal>400</MaxVal>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>2</Spline>
+			<SplineTimes>1</SplineTimes>
+		</RAIN02>
+		<RAIN03>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<distR1>5</distR1>
+			<dataR3>120</dataR3>
+			<!-- 暂不用，程序中默认为0.8 -->
+			<validDataR>0.38</validDataR>
+			<!-- 暂不用，程序中默认为0.4(越小近距离权重越大) -->
+			<gsR>12</gsR>
+			<BaseLevel>1.0</BaseLevel>
+			<InterVal>1.0</InterVal>
+			<MinVal>0.1</MinVal>
+			<MaxVal>400</MaxVal>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>2</Spline>
+			<SplineTimes>1</SplineTimes>
+		</RAIN03>
+		<RAIN06>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<distR1>5</distR1>
+			<dataR3>120</dataR3>
+			<validDataR>0.38</validDataR>
+			<!-- 暂不用，程序中默认为0.4(越小近距离权重越大) -->
+			<gsR>12</gsR>
+			<BaseLevel>1.0</BaseLevel>
+			<InterVal>1.0</InterVal>
+			<MinVal>0.1</MinVal>
+			<MaxVal>400</MaxVal>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>2</Spline>
+			<SplineTimes>1</SplineTimes>
+		</RAIN06>
+		<RAIN09>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<distR1>5</distR1>
+			<dataR3>120</dataR3>
+			<validDataR>0.38</validDataR>
+			<gsR>12</gsR>
+			<BaseLevel>1.0</BaseLevel>
+			<InterVal>1.0</InterVal>
+			<MinVal>0.1</MinVal>
+			<MaxVal>400</MaxVal>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>2</Spline>
+			<SplineTimes>1</SplineTimes>
+		</RAIN09>
+		<RAIN12>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<distR1>5</distR1>
+			<dataR3>300</dataR3>
+			<validDataR>0.38</validDataR>
+			<!-- 暂不用，程序中默认为0.4(越小近距离权重越大) -->
+			<gsR>12</gsR>
+			<BaseLevel>1.0</BaseLevel>
+			<InterVal>1.0</InterVal>
+			<MinVal>0.1</MinVal>
+			<MaxVal>400</MaxVal>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>2</Spline>
+			<SplineTimes>1</SplineTimes>
+		</RAIN12>
+		<RAIN15>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<distR1>5</distR1>
+			<dataR3>300</dataR3>
+			<validDataR>0.38</validDataR>
+			<gsR>12</gsR>
+			<BaseLevel>1.0</BaseLevel>
+			<InterVal>1.0</InterVal>
+			<MinVal>0.1</MinVal>
+			<MaxVal>400</MaxVal>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>2</Spline>
+			<SplineTimes>1</SplineTimes>
+		</RAIN15>
+		<RAIN18>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<distR1>5</distR1>
+			<dataR3>300</dataR3>
+			<validDataR>0.38</validDataR>
+			<gsR>12</gsR>
+			<BaseLevel>1.0</BaseLevel>
+			<InterVal>1.0</InterVal>
+			<MinVal>0.1</MinVal>
+			<MaxVal>400</MaxVal>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>2</Spline>
+			<SplineTimes>1</SplineTimes>
+		</RAIN18>
+		
+		<!-- 日24小时降水 -->
+		<RAIN24>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<distR1>2</distR1>
+			<dataR3>100</dataR3>
+			<validDataR>0.18</validDataR>
+			<!-- <gsR>12</gsR> -->
+			<!-- 暂不用，程序中默认为0.4(越小近距离权重越大) -->
+			<gsR>2</gsR>
+			<BaseLevel>1.0</BaseLevel>
+			<InterVal>1.0</InterVal>
+			<MinVal>0.1</MinVal>
+			<MaxVal>400</MaxVal>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>1</SplineTimes>
+			<GridedType>INVERSE_DISTANCE</GridedType> 
+		</RAIN24>	
+		<STAT_M_RAIN>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<distR1>2</distR1>
+			<dataR3>100</dataR3>
+			<validDataR>0.18</validDataR>
+			<!-- <gsR>12</gsR> -->
+			<!-- 暂不用，程序中默认为0.4(越小近距离权重越大) -->
+			<gsR>2</gsR>
+			<BaseLevel>1.0</BaseLevel>
+			<InterVal>1.0</InterVal>
+			<MinVal>0.1</MinVal>
+			<MaxVal>400</MaxVal>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>1</SplineTimes>
+			<GridedType>INVERSE_DISTANCE</GridedType> 
+		</STAT_M_RAIN>
+		<RAINOUT24>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<distR1>2</distR1>
+			<dataR3>100</dataR3>
+			<validDataR>0.18</validDataR>
+			<!-- <gsR>12</gsR> -->
+			<!-- 暂不用，程序中默认为0.4(越小近距离权重越大) -->
+			<gsR>2</gsR>
+			<BaseLevel>1.0</BaseLevel>
+			<InterVal>1.0</InterVal>
+			<MinVal>0.1</MinVal>
+			<MaxVal>400</MaxVal>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>1</SplineTimes>
+			<GridedType>INVERSE_DISTANCE</GridedType> 
+		</RAINOUT24>			
+		<!-- 日持续降水 从08时开始后累积降水 -->	
+		<RAINDAY>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<distR1>2</distR1>
+			<dataR3>100</dataR3>
+			<validDataR>0.18</validDataR>
+			<!-- <gsR>12</gsR> -->
+			<!-- 暂不用，程序中默认为0.4(越小近距离权重越大) -->
+			<gsR>2</gsR>
+			<BaseLevel>1.0</BaseLevel>
+			<InterVal>1.0</InterVal>
+			<MinVal>0.1</MinVal>
+			<MaxVal>400</MaxVal>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>1</SplineTimes>
+			<GridedType>INVERSE_DISTANCE</GridedType> 
+		</RAINDAY>		
+		<!-- 36小时降水 -->
+		<RAIN36>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<distR1>5</distR1>
+			<dataR3>500</dataR3>
+			<validDataR>0.38</validDataR>
+			<!-- 暂不用，程序中默认为0.4(越小近距离权重越大) -->
+			<gsR>2</gsR>
+			<BaseLevel>1.0</BaseLevel>
+			<InterVal>1.0</InterVal>
+			<MinVal>0.1</MinVal>
+			<MaxVal>400</MaxVal>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>2</Spline>
+			<SplineTimes>1</SplineTimes>
+		</RAIN36>
+		<!-- 48小时降水 -->
+		<RAIN48>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<distR1>5</distR1>
+			<dataR3>500</dataR3>
+			<validDataR>0.38</validDataR>
+			<!-- 暂不用，程序中默认为0.4(越小近距离权重越大) -->
+			<gsR>2</gsR>
+			<BaseLevel>1.0</BaseLevel>
+			<InterVal>1.0</InterVal>
+			<MinVal>0.1</MinVal>
+			<MaxVal>400</MaxVal>
+			<BilinearInterVal>1</BilinearInterVal>
+			<Spline>2</Spline>
+			<SplineTimes>1</SplineTimes>
+		</RAIN48>
+		<!-- 气温 -->
+		<AT>
+			<Condition Press="9999">
+				<distR1>3</distR1>
+				<dataR3>30</dataR3>
+				<validDataR>0.6</validDataR>
+				<!-- <gsR>30</gsR> -->				
+				<gsR>15</gsR>				
+				<MinVal>-100</MinVal>
+				<MaxVal>50</MaxVal>
+				<!--<GridedType>INVERSE_DISTANCE</GridedType>-->
+				<!--<GridedType>TRIANGULATION</GridedType>--> 
+			</Condition>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>0.5</xDelta>
+			<yDelta>0.5</yDelta>
+			<distR1>5</distR1>
+			<dataR3>50</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>12</gsR>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>5</Spline>
+			<SplineTimes>2</SplineTimes>			
+			<GridedType>TRIANGULATION</GridedType>
+		</AT>
+		<STAT_M_AT>
+			<Condition Press="9999">
+				<distR1>3</distR1>
+				<dataR3>30</dataR3>
+				<validDataR>0.6</validDataR>
+				<!-- <gsR>30</gsR> -->				
+				<gsR>15</gsR>				
+				<MinVal>-100</MinVal>
+				<MaxVal>50</MaxVal>
+				<GridedType>INVERSE_DISTANCE</GridedType> 
+			</Condition>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<distR1>5</distR1>
+			<dataR3>50</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>12</gsR>
+			<!-- <distR1>5</distR1>
+			<dataR3>40</dataR3>			
+			<validDataR>0.8</validDataR>
+			<gsR>10</gsR> -->
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>2</SplineTimes>			
+			<!-- <GridedType>TRIANGULATION</GridedType> --> 
+		</STAT_M_AT>
+		<STAT_M_MAX_AT>
+			<Condition Press="9999">
+				<distR1>3</distR1>
+				<dataR3>30</dataR3>
+				<validDataR>0.6</validDataR>
+				<!-- <gsR>30</gsR> -->				
+				<gsR>15</gsR>				
+				<MinVal>-100</MinVal>
+				<MaxVal>50</MaxVal>
+				<GridedType>INVERSE_DISTANCE</GridedType> 
+			</Condition>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<distR1>5</distR1>
+			<dataR3>50</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>12</gsR>
+			<!-- <distR1>5</distR1>
+			<dataR3>40</dataR3>			
+			<validDataR>0.8</validDataR>
+			<gsR>10</gsR> -->
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>2</SplineTimes>			
+			<!-- <GridedType>TRIANGULATION</GridedType> --> 
+		</STAT_M_MAX_AT>
+		<STAT_M_MIN_AT>
+			<Condition Press="9999">
+				<distR1>3</distR1>
+				<dataR3>30</dataR3>
+				<validDataR>0.6</validDataR>
+				<!-- <gsR>30</gsR> -->				
+				<gsR>15</gsR>				
+				<MinVal>-100</MinVal>
+				<MaxVal>50</MaxVal>
+				<GridedType>INVERSE_DISTANCE</GridedType> 
+			</Condition>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<distR1>5</distR1>
+			<dataR3>50</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>12</gsR>
+			<!-- <distR1>5</distR1>
+			<dataR3>40</dataR3>			
+			<validDataR>0.8</validDataR>
+			<gsR>10</gsR> -->
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>2</SplineTimes>			
+			<!-- <GridedType>TRIANGULATION</GridedType> --> 
+		</STAT_M_MIN_AT>
+		<STAT_MAX_AT>
+			<Condition Press="9999">
+				<distR1>3</distR1>
+				<dataR3>30</dataR3>
+				<validDataR>0.6</validDataR>
+				<!-- <gsR>30</gsR> -->				
+				<gsR>15</gsR>				
+				<MinVal>-100</MinVal>
+				<MaxVal>50</MaxVal>
+				<GridedType>INVERSE_DISTANCE</GridedType> 
+			</Condition>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<distR1>5</distR1>
+			<dataR3>50</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>12</gsR>
+			<!-- <distR1>5</distR1>
+			<dataR3>40</dataR3>			
+			<validDataR>0.8</validDataR>
+			<gsR>10</gsR> -->
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>2</SplineTimes>			
+			<!-- <GridedType>TRIANGULATION</GridedType> --> 
+		</STAT_MAX_AT>
+		<STAT_MIN_AT>
+			<Condition Press="9999">
+				<distR1>3</distR1>
+				<dataR3>30</dataR3>
+				<validDataR>0.6</validDataR>
+				<!-- <gsR>30</gsR> -->				
+				<gsR>15</gsR>				
+				<MinVal>-100</MinVal>
+				<MaxVal>50</MaxVal>
+				<GridedType>INVERSE_DISTANCE</GridedType> 
+			</Condition>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<distR1>5</distR1>
+			<dataR3>50</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>12</gsR>
+			<!-- <distR1>5</distR1>
+			<dataR3>40</dataR3>			
+			<validDataR>0.8</validDataR>
+			<gsR>10</gsR> -->
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10</Spline>
+			<SplineTimes>2</SplineTimes>			
+			<!-- <GridedType>TRIANGULATION</GridedType> --> 
+		</STAT_MIN_AT>
+		<!--海表水温 -->		
+		<ST>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>5</distR1>
+			<dataR3>50</dataR3>
+			<validDataR>1.2</validDataR>
+			<gsR>12</gsR>
+			<!-- <distR1>5</distR1>
+			<dataR3>40</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>10</gsR> -->
+			<BaseLevel>0</BaseLevel>
+			<InterVal>4</InterVal>
+			<MinVal>-100</MinVal>
+			<MaxVal>100</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</ST>
+		<!--风浪高度 -->		
+		<WWH>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1.5</xDelta>
+			<yDelta>1.5</yDelta>
+			<distR1>5</distR1>
+			<dataR3>50</dataR3>
+			<validDataR>1.2</validDataR>
+			<gsR>12</gsR>
+			<!-- <distR1>5</distR1>
+			<dataR3>40</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>10</gsR> -->
+			<BaseLevel>0</BaseLevel>
+			<InterVal>0.5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>20</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</WWH>
+		<!-- 位势高度 -->
+		<HH>
+			<Condition Press="1000">
+				<BaseLevel>100</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>-200</MinVal>
+				<MaxVal>780</MaxVal>
+			</Condition>
+			<Condition Press="0925">
+				<BaseLevel>800</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>200</MinVal>
+				<MaxVal>1180</MaxVal>
+			</Condition>
+			<Condition Press="0850">
+				<BaseLevel>1480</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>1000</MinVal>
+				<MaxVal>1980</MaxVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0700">
+				<BaseLevel>3000</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>2400</MinVal>
+				<MaxVal>3380</MaxVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0500">
+				<MinVal>4800</MinVal>
+				<MaxVal>6000</MaxVal>
+				<BaseLevel>5000</BaseLevel>
+				<InterVal>40</InterVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0400">
+				<MinVal>6140</MinVal>
+				<MaxVal>8120</MaxVal>
+				<BaseLevel>7340</BaseLevel>
+				<InterVal>80</InterVal>
+			</Condition>
+			<Condition Press="0300">
+				<BaseLevel>9680</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>8000</MinVal>
+				<MaxVal>10360</MaxVal>
+			</Condition>
+			<Condition Press="0200">
+				<BaseLevel>11900</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>10000</MinVal>
+				<MaxVal>13160</MaxVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0100">
+				<BaseLevel>16000</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>14400</MinVal>
+				<MaxVal>17560</MaxVal>
+			</Condition>
+			<distR1>5</distR1>
+			<dataR3>50</dataR3>
+			<validDataR>1.2</validDataR>
+			<gsR>2</gsR>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>2</SplineTimes>
+			<!-- <GridedType>TRIANGULATION</GridedType> --> 
+		</HH>
+		<STAT_M_HGT>
+			<Condition Press="1000">
+				<BaseLevel>100</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>-200</MinVal>
+				<MaxVal>780</MaxVal>
+			</Condition>
+			<Condition Press="0925">
+				<BaseLevel>800</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>200</MinVal>
+				<MaxVal>1180</MaxVal>
+			</Condition>
+			<Condition Press="0850">
+				<BaseLevel>1480</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>1000</MinVal>
+				<MaxVal>1980</MaxVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0700">
+				<BaseLevel>3000</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>2400</MinVal>
+				<MaxVal>3380</MaxVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0500">
+				<MinVal>4800</MinVal>
+				<MaxVal>6000</MaxVal>
+				<BaseLevel>5000</BaseLevel>
+				<InterVal>40</InterVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0400">
+				<MinVal>6140</MinVal>
+				<MaxVal>8120</MaxVal>
+				<BaseLevel>7340</BaseLevel>
+				<InterVal>80</InterVal>
+			</Condition>
+			<Condition Press="0300">
+				<BaseLevel>9680</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>8000</MinVal>
+				<MaxVal>10360</MaxVal>
+			</Condition>
+			<Condition Press="0200">
+				<BaseLevel>11900</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>10000</MinVal>
+				<MaxVal>13160</MaxVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0100">
+				<BaseLevel>16000</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>14400</MinVal>
+				<MaxVal>17560</MaxVal>
+			</Condition>
+			<distR1>5</distR1>
+			<dataR3>50</dataR3>
+			<validDataR>1.2</validDataR>
+			<gsR>2</gsR>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>2</SplineTimes>
+			<!-- <GridedType>TRIANGULATION</GridedType> --> 
+		</STAT_M_HGT>
+		<!-- 平均最高高度 -->
+		<STAT_M_MAX_HGT>
+			<Condition Press="1000">
+				<BaseLevel>100</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>-200</MinVal>
+				<MaxVal>900</MaxVal>
+			</Condition>
+			<Condition Press="0925">
+				<BaseLevel>800</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>200</MinVal>
+				<MaxVal>1380</MaxVal>
+			</Condition>
+			<Condition Press="0850">
+				<BaseLevel>1480</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>1000</MinVal>
+				<MaxVal>2180</MaxVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0700">
+				<BaseLevel>3000</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>2400</MinVal>
+				<MaxVal>3580</MaxVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0500">
+				<MinVal>4800</MinVal>
+				<MaxVal>6200</MaxVal>
+				<BaseLevel>5000</BaseLevel>
+				<InterVal>40</InterVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0400">
+				<MinVal>6140</MinVal>
+				<MaxVal>8520</MaxVal>
+				<BaseLevel>7340</BaseLevel>
+				<InterVal>80</InterVal>
+			</Condition>
+			<Condition Press="0300">
+				<BaseLevel>9680</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>8000</MinVal>
+				<MaxVal>10760</MaxVal>
+			</Condition>
+			<Condition Press="0200">
+				<BaseLevel>11900</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>10000</MinVal>
+				<MaxVal>13560</MaxVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0100">
+				<BaseLevel>16000</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>14400</MinVal>
+				<MaxVal>17960</MaxVal>
+			</Condition>
+			<distR1>5</distR1>
+			<dataR3>50</dataR3>
+			<validDataR>1.2</validDataR>
+			<gsR>2</gsR>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>2</SplineTimes>
+			<!-- <GridedType>TRIANGULATION</GridedType> --> 
+		</STAT_M_MAX_HGT>
+		<STAT_M_MIN_HGT>
+			<Condition Press="1000">
+				<BaseLevel>100</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>-200</MinVal>
+				<MaxVal>780</MaxVal>
+			</Condition>
+			<Condition Press="0925">
+				<BaseLevel>800</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>200</MinVal>
+				<MaxVal>1180</MaxVal>
+			</Condition>
+			<Condition Press="0850">
+				<BaseLevel>1480</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>1000</MinVal>
+				<MaxVal>1980</MaxVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0700">
+				<BaseLevel>3000</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>2400</MinVal>
+				<MaxVal>3380</MaxVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0500">
+				<MinVal>4800</MinVal>
+				<MaxVal>6000</MaxVal>
+				<BaseLevel>5000</BaseLevel>
+				<InterVal>40</InterVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0400">
+				<MinVal>6140</MinVal>
+				<MaxVal>8120</MaxVal>
+				<BaseLevel>7340</BaseLevel>
+				<InterVal>80</InterVal>
+			</Condition>
+			<Condition Press="0300">
+				<BaseLevel>9680</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>8000</MinVal>
+				<MaxVal>10360</MaxVal>
+			</Condition>
+			<Condition Press="0200">
+				<BaseLevel>11900</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>10000</MinVal>
+				<MaxVal>13160</MaxVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0100">
+				<BaseLevel>16000</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>14400</MinVal>
+				<MaxVal>17560</MaxVal>
+			</Condition>
+			<distR1>5</distR1>
+			<dataR3>50</dataR3>
+			<validDataR>1.2</validDataR>
+			<gsR>2</gsR>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>2</SplineTimes>
+			<!-- <GridedType>TRIANGULATION</GridedType> --> 
+		</STAT_M_MIN_HGT>
+		<!-- 极端最高高度 -->>
+		<STAT_MAX_HGT>
+			<Condition Press="1000">
+				<BaseLevel>100</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>-200</MinVal>
+				<MaxVal>900</MaxVal>
+			</Condition>
+			<Condition Press="0925">
+				<BaseLevel>800</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>200</MinVal>
+				<MaxVal>1380</MaxVal>
+			</Condition>
+			<Condition Press="0850">
+				<BaseLevel>1480</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>1000</MinVal>
+				<MaxVal>2180</MaxVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0700">
+				<BaseLevel>3000</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>2400</MinVal>
+				<MaxVal>3580</MaxVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0500">
+				<MinVal>4800</MinVal>
+				<MaxVal>6200</MaxVal>
+				<BaseLevel>5000</BaseLevel>
+				<InterVal>40</InterVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0400">
+				<MinVal>6140</MinVal>
+				<MaxVal>8520</MaxVal>
+				<BaseLevel>7340</BaseLevel>
+				<InterVal>80</InterVal>
+			</Condition>
+			<Condition Press="0300">
+				<BaseLevel>9680</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>8000</MinVal>
+				<MaxVal>10760</MaxVal>
+			</Condition>
+			<Condition Press="0200">
+				<BaseLevel>11900</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>10000</MinVal>
+				<MaxVal>13560</MaxVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0100">
+				<BaseLevel>16000</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>14400</MinVal>
+				<MaxVal>17960</MaxVal>
+			</Condition>
+			<distR1>5</distR1>
+			<dataR3>50</dataR3>
+			<validDataR>1.2</validDataR>
+			<gsR>2</gsR>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>2</SplineTimes>
+			<!-- <GridedType>TRIANGULATION</GridedType> --> 
+		</STAT_MAX_HGT>
+		<STAT_MIN_HGT>
+			<Condition Press="1000">
+				<BaseLevel>100</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>-200</MinVal>
+				<MaxVal>900</MaxVal>
+			</Condition>
+			<Condition Press="0925">
+				<BaseLevel>800</BaseLevel>
+				<InterVal>40</InterVal>
+				<MinVal>200</MinVal>
+				<MaxVal>1380</MaxVal>
+			</Condition>
+			<Condition Press="0850">
+				<BaseLevel>1480</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>1000</MinVal>
+				<MaxVal>2180</MaxVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0700">
+				<BaseLevel>3000</BaseLevel>
+				<InterVal>20</InterVal>
+				<MinVal>2400</MinVal>
+				<MaxVal>3580</MaxVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0500">
+				<MinVal>4800</MinVal>
+				<MaxVal>6200</MaxVal>
+				<BaseLevel>5000</BaseLevel>
+				<InterVal>40</InterVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0400">
+				<MinVal>6140</MinVal>
+				<MaxVal>8520</MaxVal>
+				<BaseLevel>7340</BaseLevel>
+				<InterVal>80</InterVal>
+			</Condition>
+			<Condition Press="0300">
+				<BaseLevel>9680</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>8000</MinVal>
+				<MaxVal>10760</MaxVal>
+			</Condition>
+			<Condition Press="0200">
+				<BaseLevel>11900</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>10000</MinVal>
+				<MaxVal>13560</MaxVal>
+			        <Spline>10,10,10,5</Spline>
+			        <SplineTimes>4</SplineTimes>
+			        <!-- <GridedType>TRIANGULATION</GridedType> --> 
+			</Condition>
+			<Condition Press="0100">
+				<BaseLevel>16000</BaseLevel>
+				<InterVal>80</InterVal>
+				<MinVal>14400</MinVal>
+				<MaxVal>17960</MaxVal>
+			</Condition>
+			<distR1>5</distR1>
+			<dataR3>50</dataR3>
+			<validDataR>1.2</validDataR>
+			<gsR>2</gsR>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>2</SplineTimes>
+			<!-- <GridedType>TRIANGULATION</GridedType> --> 
+		</STAT_MIN_HGT>
+		<HH10>
+			<Condition Press="1000">
+				<distR1>5</distR1>
+				<dataR3>50</dataR3>
+				<validDataR>1.2</validDataR>
+				<gsR>12</gsR>
+				<BaseLevel>10</BaseLevel>
+				<InterVal>4</InterVal>
+				<MinVal>-20</MinVal>
+				<MaxVal>78</MaxVal>
+			</Condition>
+			<Condition Press="0925">
+				<distR1>5</distR1>
+				<dataR3>50</dataR3>
+				<validDataR>1.2</validDataR>
+				<gsR>12</gsR>
+				<BaseLevel>80</BaseLevel>
+				<InterVal>4</InterVal>
+				<MinVal>20</MinVal>
+				<MaxVal>118</MaxVal>
+			</Condition>
+			<Condition Press="0850">
+				<distR1>5</distR1>
+				<dataR3>50</dataR3>
+				<validDataR>1.2</validDataR>
+				<gsR>12</gsR>
+				<BaseLevel>148</BaseLevel>
+				<InterVal>2</InterVal>
+				<MinVal>100</MinVal>
+				<MaxVal>198</MaxVal>
+			</Condition>
+			<Condition Press="0700">
+				<distR1>5</distR1>
+				<dataR3>50</dataR3>
+				<validDataR>1.2</validDataR>
+				<gsR>12</gsR>
+				<BaseLevel>300</BaseLevel>
+				<InterVal>2</InterVal>
+				<MinVal>240</MinVal>
+				<MaxVal>338</MaxVal>
+			</Condition>
+			<Condition Press="0500">
+				<distR1>5</distR1>
+				<dataR3>50</dataR3>
+				<validDataR>1.2</validDataR>
+				<gsR>12</gsR>
+				<BaseLevel>500</BaseLevel>
+				<InterVal>4</InterVal>
+				<MinVal>480</MinVal>
+				<MaxVal>600</MaxVal>
+			</Condition>
+			<Condition Press="0400">
+				<distR1>5</distR1>
+				<dataR3>50</dataR3>
+				<validDataR>1.2</validDataR>
+				<gsR>12</gsR>
+				<BaseLevel>734</BaseLevel>
+				<InterVal>8</InterVal>
+				<MinVal>614</MinVal>
+				<MaxVal>812</MaxVal>
+			</Condition>
+			<Condition Press="0300">
+				<distR1>5</distR1>
+				<dataR3>50</dataR3>
+				<validDataR>1.2</validDataR>
+				<gsR>12</gsR>
+				<BaseLevel>968</BaseLevel>
+				<InterVal>8</InterVal>
+				<MinVal>800</MinVal>
+				<MaxVal>1036</MaxVal>
+			</Condition>
+			<Condition Press="0200">
+				<distR1>5</distR1>
+				<dataR3>50</dataR3>
+				<validDataR>1.2</validDataR>
+				<gsR>12</gsR>
+				<BaseLevel>1190</BaseLevel>
+				<InterVal>8</InterVal>
+				<MinVal>1000</MinVal>
+				<MaxVal>1316</MaxVal>
+			</Condition>
+			<Condition Press="0100">
+				<distR1>5</distR1>
+				<dataR3>50</dataR3>
+				<validDataR>1.2</validDataR>
+				<gsR>12</gsR>
+				<BaseLevel>1600</BaseLevel>
+				<InterVal>8</InterVal>
+				<MinVal>1440</MinVal>
+				<MaxVal>1756</MaxVal>
+			</Condition>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,10</Spline>
+			<SplineTimes>2</SplineTimes>
+		</HH10>
+		<!-- 温度露点差 -->
+		<TH>
+			<Condition Press="9999">
+				<distR1>3</distR1>
+				<dataR3>30</dataR3>
+				<validDataR>0.6</validDataR>
+				<gsR>15</gsR>
+				<BaseLevel>0</BaseLevel>
+				<InterVal>2</InterVal>
+				<MinVal>-1</MinVal>
+				<MaxVal>78</MaxVal>
+			</Condition>
+			<distR1>2</distR1>
+			<dataR3>100</dataR3>
+			<validDataR>0.6</validDataR>
+			<gsR>12</gsR>
+			<BaseLevel>0</BaseLevel>
+			<InterVal>1.0</InterVal>
+			<MinVal>-1</MinVal>
+			<MaxVal>80</MaxVal>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>1</xDelta>
+			<yDelta>1</yDelta>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+			<!-- TRIANGULATION, INVERSE_DISTANCE-->
+			<!-- <GridedType>TRIANGULATION</GridedType> --> 
+		</TH>
+		<!-- 风速 -->
+		<WS>
+			<Condition Press="9999">
+				<distR1>3</distR1>
+				<dataR3>30</dataR3>
+				<validDataR>0.6</validDataR>
+				<gsR>15</gsR>
+			</Condition>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>5</distR1>
+			<dataR3>50</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>12</gsR> -->			
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>245</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</WS>
+		<STAT_M_WS>
+			<Condition Press="9999">
+				<distR1>3</distR1>
+				<dataR3>30</dataR3>
+				<validDataR>0.6</validDataR>
+				<gsR>15</gsR>
+			</Condition>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>5</distR1>
+			<dataR3>50</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>12</gsR> -->			
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>245</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</STAT_M_WS>
+		<STAT_MAX_WS>
+			<Condition Press="9999">
+				<distR1>3</distR1>
+				<dataR3>30</dataR3>
+				<validDataR>0.6</validDataR>
+				<gsR>15</gsR>
+			</Condition>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>5</distR1>
+			<dataR3>50</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>12</gsR> -->			
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>245</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</STAT_MAX_WS>
+		<STAT_MIN_WS>
+			<Condition Press="9999">
+				<distR1>3</distR1>
+				<dataR3>30</dataR3>
+				<validDataR>0.6</validDataR>
+				<gsR>15</gsR>
+			</Condition>
+			<xStart>60</xStart>
+			<xEnd>150</xEnd>
+			<yStart>0</yStart>
+			<yEnd>60</yEnd>
+			<xDelta>2</xDelta>
+			<yDelta>2</yDelta>
+			<distR1>5</distR1>
+			<dataR3>50</dataR3>
+			<validDataR>0.8</validDataR>
+			<gsR>12</gsR> -->			
+			<BaseLevel>0</BaseLevel>
+			<InterVal>5</InterVal>
+			<MinVal>0</MinVal>
+			<MaxVal>245</MaxVal>
+			<BilinearInterVal>0</BilinearInterVal>
+			<Spline>10,5</Spline>
+			<SplineTimes>2</SplineTimes>
+		</STAT_MIN_WS>
+		
+	</AllType>
+	<!-- 实况地面 -->
+	<DMQX>
+	</DMQX>
+	<DM>
+	</DM>
+	<!-- 实况高空 -->
+	<GKQX>
+	</GKQX>
+	<GK>
+	</GK>
+</SCATTERCONFIGXML>
